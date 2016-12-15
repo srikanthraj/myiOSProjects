@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PrevInvRecvdViewController">
+            <connections>
+                <outlet property="backButton" destination="9tl-10-uU2" id="azg-Sj-U0g"/>
+                <outlet property="prevInvRecvdBack" destination="gHu-r9-LY6" id="L8s-98-2lC"/>
+                <outlet property="tableView" destination="yHk-12-63U" id="0bm-et-Wmh"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Oops! Missed an invite, Send your host a message! Swipe Right on Pending invite to learn More!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AZK-ha-Hcb">
+                    <rect key="frame" x="-178" y="44" width="498" height="40"/>
+                    <color key="backgroundColor" red="0.19912616960000001" green="0.57725339980000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="1" green="0.99397569203193048" blue="0.98804398546260586" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="yHk-12-63U">
+                    <rect key="frame" x="0.0" y="127" width="320" height="502"/>
+                    <color key="backgroundColor" red="0.35886457939999999" green="0.1568488676" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="sectionIndexBackgroundColor" red="0.75294117650000003" green="0.37647058820000001" blue="0.32156862749999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="M74-gI-yl6"/>
+                        <outlet property="delegate" destination="-1" id="dGG-Xb-VcP"/>
+                    </connections>
+                </tableView>
+                <navigationBar contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gHu-r9-LY6">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                    <color key="backgroundColor" red="0.16078431372549018" green="0.10588235294117647" blue="0.2196078431372549" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="vcM-Ug-dZy"/>
+                    </constraints>
+                    <color key="barTintColor" red="0.57904257550000005" green="0.27542994970000001" blue="0.63032973560000005" alpha="1" colorSpace="calibratedRGB"/>
+                    <textAttributes key="titleTextAttributes">
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </textAttributes>
+                    <items>
+                        <navigationItem title="Previous Invites Received" id="6EH-Qc-Nfi">
+                            <barButtonItem key="leftBarButtonItem" image="Back" id="9tl-10-uU2">
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="Back" destination="-1" id="ZXS-1v-Uze"/>
+                                </connections>
+                            </barButtonItem>
+                        </navigationItem>
+                    </items>
+                </navigationBar>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="yHk-12-63U" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="3bl-F2-GaY"/>
+                <constraint firstItem="AZK-ha-Hcb" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="4Ve-R5-y76"/>
+                <constraint firstItem="gHu-r9-LY6" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="B6c-FC-IX6"/>
+                <constraint firstAttribute="bottom" secondItem="yHk-12-63U" secondAttribute="bottom" id="Brl-Pt-uhe"/>
+                <constraint firstItem="yHk-12-63U" firstAttribute="top" secondItem="AZK-ha-Hcb" secondAttribute="bottom" id="DGb-f4-9HW"/>
+                <constraint firstAttribute="trailing" secondItem="AZK-ha-Hcb" secondAttribute="trailing" id="E7k-wc-YSP"/>
+                <constraint firstAttribute="trailing" secondItem="yHk-12-63U" secondAttribute="trailing" id="E8W-DL-1hD"/>
+                <constraint firstItem="gHu-r9-LY6" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="avK-QV-zud"/>
+                <constraint firstItem="AZK-ha-Hcb" firstAttribute="top" secondItem="gHu-r9-LY6" secondAttribute="bottom" id="hgp-37-tB2"/>
+                <constraint firstAttribute="trailing" secondItem="gHu-r9-LY6" secondAttribute="trailing" id="jXt-Ki-X57"/>
+            </constraints>
+            <point key="canvasLocation" x="227" y="384"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Back" width="30" height="24"/>
+    </resources>
+</document>

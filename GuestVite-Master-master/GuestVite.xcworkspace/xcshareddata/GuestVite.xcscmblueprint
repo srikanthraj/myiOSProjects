@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "354166A3E3F5341EF257E1ABB6E353183BA31508",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "354166A3E3F5341EF257E1ABB6E353183BA31508" : 0,
+    "7F8A9344E895D0686A50009303AA94B2F9791259" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "010A713F-5FFE-4C88-91E4-F7BB47F59D68",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "354166A3E3F5341EF257E1ABB6E353183BA31508" : "GuestVite-master\/",
+    "7F8A9344E895D0686A50009303AA94B2F9791259" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "GuestVite",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "GuestVite.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/srikanthraj\/GuestVite-Master.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "354166A3E3F5341EF257E1ABB6E353183BA31508"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com\/srikanthraj",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "7F8A9344E895D0686A50009303AA94B2F9791259"
+    }
+  ]
+}
