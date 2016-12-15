@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PrevInvSentViewController">
+            <connections>
+                <outlet property="backButton" destination="tPQ-sL-gr9" id="Ipt-B0-xP2"/>
+                <outlet property="prevInvSentBack" destination="TcV-bQ-GJZ" id="z3g-Mf-hjz"/>
+                <outlet property="tableView" destination="7nZ-g5-ofm" id="Dhp-yu-CDv"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <navigationBar contentMode="scaleToFill" misplaced="YES" backIndicatorImage="Back" translatesAutoresizingMaskIntoConstraints="NO" id="TcV-bQ-GJZ">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                    <color key="backgroundColor" red="0.16217732574494009" green="0.10530995178242862" blue="0.21904469970745155" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="hVj-Zx-5gI"/>
+                        <constraint firstAttribute="height" constant="60" id="yj2-5m-4hY"/>
+                    </constraints>
+                    <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="barTintColor" red="0.57904257550335569" green="0.27542994970000001" blue="0.63032973561812078" alpha="1" colorSpace="calibratedRGB"/>
+                    <textAttributes key="titleTextAttributes">
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </textAttributes>
+                    <items>
+                        <navigationItem title="Previous Invites Sent" id="GCP-Aj-QbL">
+                            <barButtonItem key="leftBarButtonItem" image="Back" id="tPQ-sL-gr9">
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="Back" destination="-1" id="6kj-bP-Hpb"/>
+                                </connections>
+                            </barButtonItem>
+                        </navigationItem>
+                    </items>
+                </navigationBar>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7nZ-g5-ofm">
+                    <rect key="frame" x="0.0" y="66" width="320" height="502"/>
+                    <color key="backgroundColor" red="0.35886457939999999" green="0.1568488676" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="sectionIndexBackgroundColor" red="0.75294117647058822" green="0.37647058823529411" blue="0.32156862745098036" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="om5-S2-UxE"/>
+                        <outlet property="delegate" destination="-1" id="jub-fn-VxE"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="TcV-bQ-GJZ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="9t9-hS-1m2"/>
+                <constraint firstAttribute="bottom" secondItem="7nZ-g5-ofm" secondAttribute="bottom" id="KWJ-Zw-Z3k"/>
+                <constraint firstItem="TcV-bQ-GJZ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Rwd-D5-srC"/>
+                <constraint firstItem="TcV-bQ-GJZ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="STw-dh-lvd"/>
+                <constraint firstItem="7nZ-g5-ofm" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ai5-Wm-r7O"/>
+                <constraint firstItem="7nZ-g5-ofm" firstAttribute="top" secondItem="TcV-bQ-GJZ" secondAttribute="bottom" id="db2-f0-iv1"/>
+                <constraint firstItem="TcV-bQ-GJZ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="gPt-VQ-4ai"/>
+                <constraint firstAttribute="trailing" secondItem="TcV-bQ-GJZ" secondAttribute="trailing" id="hte-PM-RbW"/>
+                <constraint firstAttribute="trailing" secondItem="7nZ-g5-ofm" secondAttribute="trailing" id="jjR-9U-MLH"/>
+                <constraint firstAttribute="trailing" secondItem="TcV-bQ-GJZ" secondAttribute="trailing" id="mWy-eU-8ed"/>
+            </constraints>
+            <point key="canvasLocation" x="200" y="384"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Back" width="30" height="24"/>
+    </resources>
+</document>
