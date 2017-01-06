@@ -433,8 +433,8 @@
     
     
     NSMutableDictionary *contactInfoDict = [[NSMutableDictionary alloc]
-                                            initWithObjects:@[@"", @"",@"", @"",@""]
-                                            forKeys:@[@"firstName", @"lastName",@"mobileNumber", @"homeNumber",@"EMail"]];
+                                            initWithObjects:@[@"", @"", @"",@"", @"",@""]
+                                            forKeys:@[@"firstName", @"lastName",@"iPhoneNumber",@"mobileNumber", @"homeNumber",@"EMail"]];
     
     CFTypeRef generalCFObject;
     
@@ -463,6 +463,14 @@
     for (int i=0; i<ABMultiValueGetCount(phonesRef); i++) {
         CFStringRef currentPhoneLabel = ABMultiValueCopyLabelAtIndex(phonesRef, i);
         CFStringRef currentPhoneValue = ABMultiValueCopyValueAtIndex(phonesRef, i);
+        
+        
+        
+        // Test
+        
+        if (CFStringCompare(currentPhoneLabel, kABPersonPhoneIPhoneLabel, 0) == kCFCompareEqualTo) {
+            [contactInfoDict setObject:(__bridge NSString *)currentPhoneValue forKey:@"iPhoneNumber"];
+        }
         
         if (CFStringCompare(currentPhoneLabel, kABPersonPhoneMobileLabel, 0) == kCFCompareEqualTo) {
             [contactInfoDict setObject:(__bridge NSString *)currentPhoneValue forKey:@"mobileNumber"];
@@ -526,8 +534,45 @@
     
     NSString *tempoEMail = [[NSString alloc]init];
     
+    // Check for IPhone number first
     
-    if(([[contactInfoDict objectForKey:@"mobileNumber"] length] !=0))
+    if(([[contactInfoDict objectForKey:@"iPhoneNumber"] length] !=0))
+    {
+        
+        //Below Code Login to Remove the Extra Space When Last Name is not present
+        if([[contactInfoDict objectForKey:@"lastName"] length] > 0) {
+            tempo = [NSString stringWithFormat:@"%@ %@: %@",[contactInfoDict objectForKey:@"firstName"],[contactInfoDict objectForKey:@"lastName"],[contactInfoDict objectForKey:@"iPhoneNumber"]];
+            [self.lastNamePhoneContactsData addObject:[contactInfoDict objectForKey:@"lastName"]];
+        }
+        
+        else {
+            tempo = [NSString stringWithFormat:@"%@: %@",[contactInfoDict objectForKey:@"firstName"],[contactInfoDict objectForKey:@"iPhoneNumber"]];
+            
+            [self.lastNamePhoneContactsData addObject:@"Not Specified"];
+        }
+        
+        [self.firstNamePhoneContactsData addObject:[contactInfoDict objectForKey:@"firstName"]];
+        [self.phoneContactsData addObject:[contactInfoDict objectForKey:@"iPhoneNumber"]];
+        
+        //NSLog(@"PHONE CONTACTS DATA %@",[contactInfoDict objectForKey:@"mobileNumber"]);
+        if([self.smsGuestList.text isEqualToString:@"Address Book Imported Phone Numbers goes here"]){
+            self.smsGuestList.text = [tempo stringByAppendingString:@"\n"];
+            
+        }
+        
+        else {
+            
+            //NSLog(@"PHONE CONTACTS DATA %@",[contactInfoDict objectForKey:@"mobileNumber"]);
+            
+            self.smsGuestList.text = [self.smsGuestList.text stringByAppendingString:[tempo stringByAppendingString:@"\n"]];
+        }
+        
+    }
+
+    
+    
+    // Take Mobile Number If IPhone Number is Not there
+    else if(([[contactInfoDict objectForKey:@"mobileNumber"] length] !=0))
     {
         
         //Below Code Login to Remove the Extra Space When Last Name is not present
@@ -633,6 +678,20 @@
         }
         
     }
+    
+    // Test
+    if([[contactInfoDict objectForKey:@"EMail"] length] ==0 && [[contactInfoDict objectForKey:@"homeNumber"] length] ==0 && [[contactInfoDict objectForKey:@"mobileNumber"] length] ==0 && [[contactInfoDict objectForKey:@"iPhoneNumber"] length] ==0) {
+        
+        
+        UIAlertController *ac = [UIAlertController alertControllerWithTitle:@"GuestVite" message:[ NSString stringWithFormat:@"%@ has none of the below numbers defined in the addrress book \n iPhone Number \n Mobile Number \n Home Number \n E-Mail address",[contactInfoDict objectForKey:@"firstName"]]preferredStyle:UIAlertControllerStyleAlert];
+        
+        UIAlertAction *aa = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil];
+        
+        [ac addAction:aa];
+        [self presentViewController:ac animated:YES completion:nil];
+        
+    }
+        
     
     
     //NSLog(@"Inside!!!");

@@ -1,0 +1,12 @@
+PODS:
+  - AJWValidator (0.0.8)
+
+DEPENDENCIES:
+  - AJWValidator
+
+SPEC CHECKSUMS:
+  AJWValidator: ed00557b9cdcc38a8216aa9ddbd76b4eadb73615
+
+PODFILE CHECKSUM: dd42ffcc4b6394d78e81926a07e90abc2e7d0d7f
+
+COCOAPODS: 1.0.1

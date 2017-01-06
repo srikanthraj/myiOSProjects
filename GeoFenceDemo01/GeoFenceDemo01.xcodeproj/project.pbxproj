@@ -1,0 +1,318 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		848C2A871E097C6400395E99 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 848C2A861E097C6400395E99 /* main.m */; };
+		848C2A8A1E097C6400395E99 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 848C2A891E097C6400395E99 /* AppDelegate.m */; };
+		848C2A8D1E097C6400395E99 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848C2A8C1E097C6400395E99 /* ViewController.m */; };
+		848C2A901E097C6400395E99 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 848C2A8E1E097C6400395E99 /* Main.storyboard */; };
+		848C2A921E097C6400395E99 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 848C2A911E097C6400395E99 /* Assets.xcassets */; };
+		848C2A951E097C6400395E99 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 848C2A931E097C6400395E99 /* LaunchScreen.storyboard */; };
+		848C2A9D1E097C8200395E99 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 848C2A9C1E097C8200395E99 /* MapKit.framework */; };
+		84F298241E0A1EEB005AE73C /* trace.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 84F298231E0A1EEB005AE73C /* trace.gpx */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		848C2A821E097C6400395E99 /* GeoFenceDemo01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeoFenceDemo01.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		848C2A861E097C6400395E99 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		848C2A881E097C6400395E99 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		848C2A891E097C6400395E99 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		848C2A8B1E097C6400395E99 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		848C2A8C1E097C6400395E99 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		848C2A8F1E097C6400395E99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		848C2A911E097C6400395E99 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		848C2A941E097C6400395E99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		848C2A961E097C6400395E99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		848C2A9C1E097C8200395E99 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		84F298231E0A1EEB005AE73C /* trace.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = trace.gpx; path = ../../../Desktop/trace.gpx; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		848C2A7F1E097C6400395E99 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				848C2A9D1E097C8200395E99 /* MapKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		848C2A791E097C6400395E99 = {
+			isa = PBXGroup;
+			children = (
+				84F298231E0A1EEB005AE73C /* trace.gpx */,
+				848C2A9C1E097C8200395E99 /* MapKit.framework */,
+				848C2A841E097C6400395E99 /* GeoFenceDemo01 */,
+				848C2A831E097C6400395E99 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		848C2A831E097C6400395E99 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				848C2A821E097C6400395E99 /* GeoFenceDemo01.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		848C2A841E097C6400395E99 /* GeoFenceDemo01 */ = {
+			isa = PBXGroup;
+			children = (
+				848C2A881E097C6400395E99 /* AppDelegate.h */,
+				848C2A891E097C6400395E99 /* AppDelegate.m */,
+				848C2A8B1E097C6400395E99 /* ViewController.h */,
+				848C2A8C1E097C6400395E99 /* ViewController.m */,
+				848C2A8E1E097C6400395E99 /* Main.storyboard */,
+				848C2A911E097C6400395E99 /* Assets.xcassets */,
+				848C2A931E097C6400395E99 /* LaunchScreen.storyboard */,
+				848C2A961E097C6400395E99 /* Info.plist */,
+				848C2A851E097C6400395E99 /* Supporting Files */,
+			);
+			path = GeoFenceDemo01;
+			sourceTree = "<group>";
+		};
+		848C2A851E097C6400395E99 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				848C2A861E097C6400395E99 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		848C2A811E097C6400395E99 /* GeoFenceDemo01 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 848C2A991E097C6400395E99 /* Build configuration list for PBXNativeTarget "GeoFenceDemo01" */;
+			buildPhases = (
+				848C2A7E1E097C6400395E99 /* Sources */,
+				848C2A7F1E097C6400395E99 /* Frameworks */,
+				848C2A801E097C6400395E99 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GeoFenceDemo01;
+			productName = GeoFenceDemo01;
+			productReference = 848C2A821E097C6400395E99 /* GeoFenceDemo01.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		848C2A7A1E097C6400395E99 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = admin;
+				TargetAttributes = {
+					848C2A811E097C6400395E99 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = 848C2A7D1E097C6400395E99 /* Build configuration list for PBXProject "GeoFenceDemo01" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 848C2A791E097C6400395E99;
+			productRefGroup = 848C2A831E097C6400395E99 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				848C2A811E097C6400395E99 /* GeoFenceDemo01 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		848C2A801E097C6400395E99 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				848C2A951E097C6400395E99 /* LaunchScreen.storyboard in Resources */,
+				84F298241E0A1EEB005AE73C /* trace.gpx in Resources */,
+				848C2A921E097C6400395E99 /* Assets.xcassets in Resources */,
+				848C2A901E097C6400395E99 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		848C2A7E1E097C6400395E99 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				848C2A8D1E097C6400395E99 /* ViewController.m in Sources */,
+				848C2A8A1E097C6400395E99 /* AppDelegate.m in Sources */,
+				848C2A871E097C6400395E99 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		848C2A8E1E097C6400395E99 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				848C2A8F1E097C6400395E99 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		848C2A931E097C6400395E99 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				848C2A941E097C6400395E99 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		848C2A971E097C6400395E99 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		848C2A981E097C6400395E99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		848C2A9A1E097C6400395E99 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GeoFenceDemo01/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.helloworld.GeoFenceDemo01.GeoFenceDemo01;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		848C2A9B1E097C6400395E99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GeoFenceDemo01/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.helloworld.GeoFenceDemo01.GeoFenceDemo01;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		848C2A7D1E097C6400395E99 /* Build configuration list for PBXProject "GeoFenceDemo01" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				848C2A971E097C6400395E99 /* Debug */,
+				848C2A981E097C6400395E99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		848C2A991E097C6400395E99 /* Build configuration list for PBXNativeTarget "GeoFenceDemo01" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				848C2A9A1E097C6400395E99 /* Debug */,
+				848C2A9B1E097C6400395E99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 848C2A7A1E097C6400395E99 /* Project object */;
+}

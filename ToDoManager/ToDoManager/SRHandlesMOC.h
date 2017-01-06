@@ -10,4 +10,6 @@
 
 @protocol SRHandlesMOC <NSObject>
 
+-(void) receiveMOC:(NSManagedObjectContext *)incomingMOC;
+
 @end

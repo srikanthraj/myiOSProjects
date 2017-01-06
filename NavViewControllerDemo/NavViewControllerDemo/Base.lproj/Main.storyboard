@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="RrJ-Xe-ZEm">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--This is the Top-->
+        <scene sceneID="6jL-v4-gJk">
+            <objects>
+                <tableViewController id="eAJ-0M-CkH" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="nam-nD-xRt">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <sections>
+                            <tableViewSection id="JRU-MK-xxs">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="NY0-bU-soH">
+                                        <rect key="frame" x="0.0" y="94" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="NY0-bU-soH" id="NqY-9D-mWI">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Potato Chips" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ai-XY-k53">
+                                                    <rect key="frame" x="240" y="8" width="99" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="6ai-XY-k53" firstAttribute="centerY" secondItem="NqY-9D-mWI" secondAttribute="centerY" id="GNI-17-E70"/>
+                                                <constraint firstItem="6ai-XY-k53" firstAttribute="centerX" secondItem="NqY-9D-mWI" secondAttribute="centerX" id="q95-hy-uLt"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="xNK-9J-MAg" kind="show" id="NTB-dC-UW1"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="dpf-5p-tpJ">
+                                        <rect key="frame" x="0.0" y="138" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dpf-5p-tpJ" id="rR1-03-eP0">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Soda" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eC4-U7-oJg">
+                                                    <rect key="frame" x="269" y="8" width="40" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="eC4-U7-oJg" firstAttribute="centerY" secondItem="rR1-03-eP0" secondAttribute="centerY" id="2Lp-ED-8m9"/>
+                                                <constraint firstItem="eC4-U7-oJg" firstAttribute="centerX" secondItem="rR1-03-eP0" secondAttribute="centerX" id="iPx-kx-C6h"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="inQ-hb-ZZz" kind="show" id="q1S-bt-NnU"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="EJX-Y9-oSu">
+                                        <rect key="frame" x="0.0" y="182" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="EJX-Y9-oSu" id="vW3-uB-lSs">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Candy Bar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q6e-pf-hZC">
+                                                    <rect key="frame" x="260" y="11" width="80" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="q6e-pf-hZC" firstAttribute="centerX" secondItem="vW3-uB-lSs" secondAttribute="centerX" id="AK0-A9-JaD"/>
+                                                <constraint firstItem="q6e-pf-hZC" firstAttribute="centerY" secondItem="vW3-uB-lSs" secondAttribute="centerY" id="nHU-ZS-N9G"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="WfO-7o-EkM" kind="show" id="65m-dD-Vzn"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="eAJ-0M-CkH" id="vvL-J9-wNC"/>
+                            <outlet property="delegate" destination="eAJ-0M-CkH" id="Dja-JW-DAb"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="This is the Top" prompt="Choose your snack" id="IJ2-NR-OUA">
+                        <barButtonItem key="backBarButtonItem" title="Top" id="SP1-wH-IWX"/>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yRQ-yU-a3v" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="730" y="338"/>
+        </scene>
+        <!--Candy Bar-->
+        <scene sceneID="h4l-mQ-ny0">
+            <objects>
+                <viewController id="WfO-7o-EkM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xc0-53-BLU"/>
+                        <viewControllerLayoutGuide type="bottom" id="aEO-Pp-whc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KyP-wt-Cgk">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Candy Bar" id="jfH-yP-GrH"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MMY-eZ-Arg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="730" y="1042"/>
+        </scene>
+        <!--Potato Chip-->
+        <scene sceneID="892-qA-vur">
+            <objects>
+                <viewController id="xNK-9J-MAg" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DKG-Va-w7q"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ic3-TH-e6P"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="SYH-N2-Vpg">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S53-HR-Nyx">
+                                <rect key="frame" x="239" y="150" width="96" height="30"/>
+                                <state key="normal" title="Corn Chips"/>
+                                <connections>
+                                    <segue destination="ubB-F2-tIR" kind="show" id="0KE-ie-UDz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0gc-6Q-p5B">
+                                <rect key="frame" x="246" y="231" width="82" height="30"/>
+                                <state key="normal" title="BBQ Chips"/>
+                                <connections>
+                                    <segue destination="GMW-05-dzN" kind="show" id="Zfq-Kp-qoM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Potato Chip" prompt="Made with Potatoes" id="eiF-s3-KQm">
+                        <barButtonItem key="backBarButtonItem" title="PC" id="TcA-Pg-2fp"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ptp-ud-odG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1394" y="-11"/>
+        </scene>
+        <!--Corn Chips-->
+        <scene sceneID="qmh-th-GT1">
+            <objects>
+                <viewController id="ubB-F2-tIR" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yTb-A3-TA2"/>
+                        <viewControllerLayoutGuide type="bottom" id="WFa-En-cT2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JGC-0N-5Qd">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Corn Chips" prompt="Made with Corn" id="kXk-Qk-h1L"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="02V-ch-5kN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2065" y="-11"/>
+        </scene>
+        <!--Soda-->
+        <scene sceneID="q5y-Pm-CrG">
+            <objects>
+                <viewController id="inQ-hb-ZZz" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rsu-1S-2PM"/>
+                        <viewControllerLayoutGuide type="bottom" id="MNd-wp-8bi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NF3-6h-Lvn">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Soda" id="6st-n8-KCc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Agz-qS-ycK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1398" y="626"/>
+        </scene>
+        <!--BBQ Chips-->
+        <scene sceneID="YnU-qQ-XZn">
+            <objects>
+                <viewController id="GMW-05-dzN" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cnM-SX-TFj"/>
+                        <viewControllerLayoutGuide type="bottom" id="oOP-9F-9ro"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vtu-oC-dmO">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="BBQ Chips" id="7cK-ds-2NH"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mlm-lk-vNM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2059" y="626"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="1za-o1-dR5">
+            <objects>
+                <navigationController id="RrJ-Xe-ZEm" sceneMemberID="viewController">
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="D4L-2H-Vv2">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="eAJ-0M-CkH" kind="relationship" relationship="rootViewController" id="QJy-cn-u78"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0fh-ey-JG3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-90" y="338"/>
+        </scene>
+    </scenes>
+</document>

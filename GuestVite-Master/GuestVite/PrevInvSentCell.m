@@ -10,6 +10,8 @@
 
 @implementation PrevInvSentCell
 
+@synthesize firstNameLabel = _firstNameLabel;
+@synthesize lastNameLabel = _lastNameLabel;
 @synthesize guestEMail = _guestEMail;
 @synthesize guestEMailLabel = _guestEMailLabel;
 @synthesize guestPhone = _guestPhone;

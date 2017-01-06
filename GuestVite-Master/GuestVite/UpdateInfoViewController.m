@@ -277,6 +277,7 @@ NSMutableString *zip;
     if(sender.text.length > 0){
         self.nameTextView.text = NSLocalizedString(@"😃", nil);
         self.nameField.backgroundColor = [UIColor whiteColor];
+        self.nameField.textColor = [UIColor blackColor];
         self.entryErrorName = NO;
         NSLog(@"Error of First Name is %@",self.entryErrorName ? @"YES" : @"NO");
     }
@@ -286,6 +287,7 @@ NSMutableString *zip;
     else {
         UIColor *invalidRed = [UIColor colorWithRed:0.89 green:0.18 blue:0.16 alpha:1];
         self.nameField.backgroundColor = [invalidRed colorWithAlphaComponent:0.3];
+        self.nameField.textColor = [UIColor whiteColor];
         self.nameTextView.text = NSLocalizedString(@"😧", nil);
         self.nameTextView.textColor = invalidRed;
         self.entryErrorName = YES;
@@ -293,6 +295,7 @@ NSMutableString *zip;
     
     if(sender.text.length ==0) {
         self.nameField.backgroundColor = [UIColor whiteColor];
+        self.nameField.textColor = [UIColor blackColor];
         self.nameTextView.text = NSLocalizedString(@"😢", nil);
         self.entryErrorName = YES;
     }
@@ -308,6 +311,7 @@ NSMutableString *zip;
     if([self validateCityWithString:sender.text]){
         self.cityTextView.text = NSLocalizedString(@"😃", nil);
         self.cityField.backgroundColor = [UIColor whiteColor];
+        self.cityField.textColor = [UIColor blackColor];
         self.entryErrorCity = NO;
         NSLog(@"Error of City is %@",self.entryErrorCity ? @"YES" : @"NO");
         
@@ -317,6 +321,7 @@ NSMutableString *zip;
     else {
         UIColor *invalidRed = [UIColor colorWithRed:0.89 green:0.18 blue:0.16 alpha:1];
         self.cityField.backgroundColor = [invalidRed colorWithAlphaComponent:0.3];
+        self.cityField.textColor = [UIColor whiteColor];
         self.cityTextView.text = NSLocalizedString(@"😧", nil);
         self.cityTextView.textColor = invalidRed;
         self.entryErrorCity = YES;
@@ -324,6 +329,7 @@ NSMutableString *zip;
     
     if(sender.text.length ==0) {
         self.cityField.backgroundColor = [UIColor whiteColor];
+        self.cityField.textColor = [UIColor blackColor];
         self.cityTextView.text = NSLocalizedString(@"😢", nil);
         self.entryErrorCity = YES;
     }
@@ -338,6 +344,7 @@ NSMutableString *zip;
         
         self.zipTextView.text = NSLocalizedString(@"😃", nil);
         self.zipField.backgroundColor = [UIColor whiteColor];
+        self.zipField.textColor = [UIColor blackColor];
         self.entryErrorZip = NO;
         NSLog(@"Error of Zip is %@",self.entryErrorZip ? @"YES" : @"NO");
     }
@@ -345,6 +352,7 @@ NSMutableString *zip;
     else {
         UIColor *invalidRed = [UIColor colorWithRed:0.89 green:0.18 blue:0.16 alpha:1];
         self.zipField.backgroundColor = [invalidRed colorWithAlphaComponent:0.3];
+        self.zipField.textColor = [UIColor whiteColor];
         self.zipTextView.text = NSLocalizedString(@"😧", nil);
         self.zipTextView.textColor = invalidRed;
         self.entryErrorZip = YES;
@@ -352,6 +360,7 @@ NSMutableString *zip;
     
     if(sender.text.length ==0) {
         self.zipField.backgroundColor = [UIColor whiteColor];
+        self.zipField.textColor = [UIColor blackColor];
         self.zipTextView.text = NSLocalizedString(@"😢", nil);
         self.entryErrorZip = YES;
     }
@@ -364,8 +373,8 @@ NSMutableString *zip;
     if([self validateZipPhoneWithString:sender.text] && [sender.text length] == 10){
         self.phoneTextView.text = NSLocalizedString(@"😃", nil);
         self.phoneField.backgroundColor = [UIColor whiteColor];
+        self.phoneField.textColor = [UIColor blackColor];
         self.entryErrorPhone = NO;
-        NSLog(@"Error of Phone is %@",self.entryErrorPhone ? @"YES" : @"NO");
         
     }
     
@@ -373,6 +382,7 @@ NSMutableString *zip;
         UIColor *invalidRed = [UIColor colorWithRed:0.89 green:0.18 blue:0.16 alpha:1];
         self.phoneField.backgroundColor = [invalidRed colorWithAlphaComponent:0.3];
         self.phoneTextView.text = NSLocalizedString(@"😧", nil);
+        self.phoneField.textColor = [UIColor whiteColor];
         self.phoneTextView.textColor = invalidRed;
         self.entryErrorPhone = YES;
     }
@@ -380,6 +390,7 @@ NSMutableString *zip;
     if(sender.text.length ==0) {
         self.phoneField.backgroundColor = [UIColor whiteColor];
         self.phoneTextView.text = NSLocalizedString(@"😢", nil);
+        self.phoneField.textColor = [UIColor blackColor];
         self.entryErrorPhone = YES;
     }
     

@@ -139,7 +139,7 @@
     
     self.ref = [[FIRDatabase database] reference];
     
-    self.eMailguestList.text = @"Enter Email Addressses here";
+    self.eMailguestList.text = @"Enter Email Addresses here";
     self.eMailguestList.textColor = [UIColor lightGrayColor];
     self.eMailguestList.layer.cornerRadius = 10.0;
     self.eMailguestList.layer.borderWidth = 1.0;
@@ -442,7 +442,7 @@
     
     if(self.eMailguestList.isFirstResponder)
     {
-        if([self.eMailguestList.text isEqualToString:@"Enter Email Addressses here"]) {
+        if([self.eMailguestList.text isEqualToString:@"Enter Email Addresses here"]) {
             self.eMailguestList.text = @"";
             self.eMailguestList.textColor = [UIColor blackColor];
         }
@@ -468,7 +468,7 @@
         }
         
         if([self.eMailguestList.text isEqualToString:@""]) {
-            self.eMailguestList.text = @"Enter Email Addressses here";
+            self.eMailguestList.text = @"Enter Email Addresses here";
             self.eMailguestList.textColor = [UIColor grayColor];
         }
         
@@ -487,7 +487,7 @@
         }
         
         if([self.eMailguestList.text isEqualToString:@""]) {
-            self.eMailguestList.text = @"Enter Email Addressses here";
+            self.eMailguestList.text = @"Enter Email Addresses here";
             self.eMailguestList.textColor = [UIColor grayColor];
         }
         
@@ -508,7 +508,7 @@
     {
         if(self.eMailguestList.text.length == 0){
             self.eMailguestList.textColor = [UIColor lightGrayColor];
-            self.eMailguestList.text = @"Enter Email Addressses here";
+            self.eMailguestList.text = @"Enter Email Addresses here";
             [self.eMailguestList resignFirstResponder];
         }
     }
@@ -710,19 +710,35 @@
         //NSLog(@"Bad Phone numbers are %@",badPhoneList);
         
         
-        // 4 conditions to be checked
+        // 5 conditions to be checked
         /*
          
-         1. If( Error in Phone and From Date > To Date)
-         2. Else If (Error in Phone)
-         3. Else If (From date > To Date)
-         4. Else - Go Ahead and Add in DB
+         1. If(No Phone Numbers have been added)
+         2. If( Error in Phone and From Date > To Date)
+         3. Else If (Error in Phone)
+         4. Else If (From date > To Date)
+         5. Else - Go Ahead and Add in DB
          
          */
         
+       
+        if([badPhoneList count] ==1 && ([self.smsGuestList.text isEqualToString:@"Enter Phone Numbers here"] || [self.smsGuestList.text isEqualToString:@""])) {
+            
+            UIAlertController *ac = [UIAlertController alertControllerWithTitle:@"GuestVite" message:[NSString stringWithFormat:@"%@",@"No Phone Numbers have been added"]preferredStyle:UIAlertControllerStyleAlert];
+            
+            UIAlertAction *aa = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil];
+            
+            [ac addAction:aa];
+            [self presentViewController:ac animated:YES completion:nil];
+            
+        }
+        
+        
         //1. If( Error in fields and From Date > To Date)
         
-        if([badPhoneList count] > 0 && !([fromDate compare:toDate] == NSOrderedAscending)) {
+        
+        
+        else if([badPhoneList count] > 0 && !([fromDate compare:toDate] == NSOrderedAscending)) {
             
             // Mark bad Phone with red
             
@@ -795,6 +811,7 @@
         //  3. Else If (From date > To Date)
         else if(!([fromDate compare:toDate] == NSOrderedAscending)) {
             
+            self.smsGuestList.textColor = [UIColor blackColor];
             UIAlertController *ac = [UIAlertController alertControllerWithTitle:@"GuestVite" message:@"From Date cannot be later than Till Date"preferredStyle:UIAlertControllerStyleAlert];
             
             UIAlertAction *aa = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil];
@@ -1059,20 +1076,33 @@
         
         //NSLog(@"Bad E-Mail Addresses are %@",badEMailList);
         
-        // 4 conditions to be checked
+        // 5 conditions to be checked
         /*
          
-         1. If( Error in E-Mail and From Date > To Date)
-         2. Else If (Error in E-Mail)
-         3. Else If (From date > To Date)
-         4. Else - Go Ahead and Add in DB
+         1. If(No E-Mail have been added)
+         2. If( Error in E-Mail and From Date > To Date)
+         3. Else If (Error in E-Mail)
+         4. Else If (From date > To Date)
+         5. Else - Go Ahead and Add in DB
          
          */
+        
+        if([badEMailList count] ==1 && ([self.eMailguestList.text isEqualToString:@"Enter Email Addresses here"] || [self.eMailguestList.text isEqualToString:@""])) {
+            
+            UIAlertController *ac = [UIAlertController alertControllerWithTitle:@"GuestVite" message:[NSString stringWithFormat:@"%@",@"No Email Addresses have been added"]preferredStyle:UIAlertControllerStyleAlert];
+            
+            UIAlertAction *aa = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil];
+            
+            [ac addAction:aa];
+            [self presentViewController:ac animated:YES completion:nil];
+            
+        }
+
         
         
         //1. If( Error in fields and From Date > To Date)
         
-        if([badEMailList count] > 0 && !([fromDate compare:toDate] == NSOrderedAscending)) {
+        else if([badEMailList count] > 0 && !([fromDate compare:toDate] == NSOrderedAscending)) {
             
             // Mark bad E-Mail with red
             
@@ -1145,6 +1175,8 @@
         
         //  3. Else If (From date > To Date)
         else if(!([fromDate compare:toDate] == NSOrderedAscending)) {
+            
+            self.eMailguestList.textColor = [UIColor blackColor];
             
             UIAlertController *ac = [UIAlertController alertControllerWithTitle:@"GuestVite" message:@"From Date cannot be later than To Date"preferredStyle:UIAlertControllerStyleAlert];
             

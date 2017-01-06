@@ -25,6 +25,8 @@
 @implementation PrevInvSentViewController
 
 EmptyViewController *pisEmptyView;
+NSMutableArray *pisfirstNameData;
+NSMutableArray *pislastNameData;
 NSMutableArray *pisGuestEMailData;
 NSMutableArray *pisGuestPhoneData;
 NSMutableArray *pisnameData;
@@ -58,6 +60,8 @@ UIActivityIndicatorView *activityIndicator;
     [self setNeedsStatusBarAppearanceUpdate];
     
     pisEmptyView = [[EmptyViewController alloc]init];
+    pisfirstNameData = [[NSMutableArray alloc]init];
+    pislastNameData = [[NSMutableArray alloc]init];
     pisGuestEMailData = [[NSMutableArray alloc]init];
     pisGuestPhoneData = [[NSMutableArray alloc]init];
     pisinvitedFromData = [[NSMutableArray alloc]init];
@@ -97,6 +101,8 @@ UIActivityIndicatorView *activityIndicator;
    NSDate *loginDate = [self dateToFormatedDate:[dateFormatter stringFromDate:[NSDate date]]];
     
     
+    __block NSMutableArray *myfirstNameData = [[NSMutableArray alloc] init];
+    __block NSMutableArray *mylastNameData = [[NSMutableArray alloc] init];
     __block NSMutableArray *myGuestEMailData = [[NSMutableArray alloc] init];
     __block NSMutableArray *myGuestPhoneData = [[NSMutableArray alloc] init];
     __block NSMutableArray *myinvitedFromData = [[NSMutableArray alloc] init];
@@ -195,6 +201,33 @@ UIActivityIndicatorView *activityIndicator;
                     [myGuestPhoneData addObject: @"Not Specified"];
                 }
                 
+                    if([arr[i][@"Receiver First Name"] length] == 0) {
+                        [myfirstNameData addObject: @"Not Specified"];
+                        // NSLog(@"Receiver Phone Empty");
+                    }
+                    
+                    else if(!([arr[i][@"Receiver First Name"] isEqualToString:@"BULK"])) {
+                        [myfirstNameData addObject: arr[i][@"Receiver First Name"]];
+                    }
+                    else {
+                        [myfirstNameData addObject: @"Not Specified"];
+                    }
+                    
+                    
+                    if([arr[i][@"Receiver Last Name"] length] == 0) {
+                        [mylastNameData addObject: @"Not Specified"];
+                        // NSLog(@"Receiver Phone Empty");
+                    }
+                    
+                    else if(!([arr[i][@"Receiver Last Name"] isEqualToString:@"BULK"])) {
+                        [mylastNameData addObject: arr[i][@"Receiver Last Name"]];
+                    }
+                    else {
+                        [mylastNameData addObject: @"Not Specified"];
+                    }
+  
+                    
+                
                 [myinvitedFromData addObject:arr[i][@"Invite For Date"]];
                 [myinvitedTillData addObject:arr[i][@"Invite Valid Till Date"]];
                 [myactionTakenData addObject:arr[i][@"Invitation Status"]];
@@ -236,7 +269,34 @@ UIActivityIndicatorView *activityIndicator;
                 else {
                     [myGuestPhoneData addObject: @"Not Specified"];
                 }
-
+                    
+                
+                    if([arr[i][@"Receiver First Name"] length] == 0) {
+                        [myfirstNameData addObject: @"Not Specified"];
+                        // NSLog(@"Receiver Phone Empty");
+                    }
+                    
+                    else if(!([arr[i][@"Receiver First Name"] isEqualToString:@"BULK"])) {
+                        [myfirstNameData addObject: arr[i][@"Receiver First Name"]];
+                    }
+                    else {
+                        [myfirstNameData addObject: @"Not Specified"];
+                    }
+                    
+                    
+                    if([arr[i][@"Receiver Last Name"] length] == 0) {
+                        [mylastNameData addObject: @"Not Specified"];
+                        // NSLog(@"Receiver Phone Empty");
+                    }
+                    
+                    else if(!([arr[i][@"Receiver Last Name"] isEqualToString:@"BULK"])) {
+                        [mylastNameData addObject: arr[i][@"Receiver Last Name"]];
+                    }
+                    else {
+                        [mylastNameData addObject: @"Not Specified"];
+                    }
+    
+                    
                 
                 [myinvitedFromData addObject:arr[i][@"Invite For Date"]];
                 [myinvitedTillData addObject:arr[i][@"Invite Valid Till Date"]];
@@ -257,6 +317,8 @@ UIActivityIndicatorView *activityIndicator;
                 //NSLog(@"Last Iteration");
                 if([myGuestEMailData count]== 0 && [myGuestPhoneData count]== 0 && [myinvitedFromData count]== 0 && [myinvitedTillData count]== 0)
                 {
+                    [myfirstNameData addObject: @"No Invites"];
+                    [mylastNameData addObject: @"No Invites"];
                     [myGuestEMailData addObject: @"No Invites"];
                     [myGuestPhoneData addObject: @"No Invites"];
                     [myinvitedFromData addObject: @"No Invites"];
@@ -279,6 +341,9 @@ UIActivityIndicatorView *activityIndicator;
     
     //NSLog(@"myinvitedFromData count is %lu",(unsigned long)[myinvitedFromData count]);
     for(int i =0;i<[myinvitedFromData count];i++){
+        
+        [pisfirstNameData addObject:[myfirstNameData objectAtIndex:i]];
+        [pislastNameData addObject:[mylastNameData objectAtIndex:i]];
         [pisGuestEMailData addObject:[myGuestEMailData objectAtIndex:i]];
         [pisGuestPhoneData addObject:[myGuestPhoneData objectAtIndex:i]];
         [pisinvitedFromData addObject:[myinvitedFromData objectAtIndex:i]];
@@ -347,6 +412,18 @@ UIActivityIndicatorView *activityIndicator;
     cell.delegate = self;
     
     
+    if(!([[pisfirstNameData objectAtIndex:indexPath.row] isEqualToString:@"Not Specified"])) {
+        cell.firstNameLabel.text = [pisfirstNameData objectAtIndex:indexPath.row];
+    }
+    
+    else {
+        cell.firstNameLabel.text = @"Not Specified";
+    }
+
+    if(!([[pislastNameData objectAtIndex:indexPath.row] isEqualToString:@"Not Specified"])) {
+        cell.lastNameLabel.text = [pislastNameData objectAtIndex:indexPath.row];
+    }
+    
     
     if(!([[pisGuestEMailData objectAtIndex:indexPath.row] isEqualToString:@"Not Specified"])) {
     cell.guestEMailLabel.text = [pisGuestEMailData objectAtIndex:indexPath.row];
@@ -388,6 +465,8 @@ UIActivityIndicatorView *activityIndicator;
 */
     if([[piskeyData objectAtIndex:indexPath.row]integerValue] == -1){ // No entries in the Table
         
+        [cell.firstNameLabel setHidden:YES];
+        [cell.lastNameLabel setHidden:YES];
         [cell.guestEMail setHidden:YES];
         [cell.guestEMailLabel setHidden:YES];
         [cell.guestPhone setHidden:YES];
@@ -415,7 +494,7 @@ UIActivityIndicatorView *activityIndicator;
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 214;
+    return 230;
 }
 
 - (void)swipeableTableViewCell:(SWTableViewCell *)cell didTriggerRightUtilityButtonWithIndex:(NSInteger)index {
@@ -428,6 +507,8 @@ UIActivityIndicatorView *activityIndicator;
             
             // Delete button is pressed
             NSIndexPath *cellIndexPath = [self.tableView indexPathForCell:cell];
+            [pisfirstNameData removeObjectAtIndex:cellIndexPath.row];
+            [pislastNameData removeObjectAtIndex:cellIndexPath.row];
             [pisGuestEMailData removeObjectAtIndex:cellIndexPath.row];
             [pisGuestPhoneData removeObjectAtIndex:cellIndexPath.row];
             [pisinvitedFromData removeObjectAtIndex:cellIndexPath.row];

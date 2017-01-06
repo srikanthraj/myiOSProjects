@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SRHandlesMOC.h"
+#import "SRHandlesToDoEntity.h"
 
-@interface MyUITableViewController : UITableViewController
+
+@interface MyUITableViewController : UITableViewController <SRHandlesMOC>
+
+-(void) receiveMOC:(NSManagedObjectContext *)incomingMOC;
+-(void) receiveToDoEntity:(ToDoEntity *)incomingToDoEntity;
 
 @end

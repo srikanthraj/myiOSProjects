@@ -28,6 +28,8 @@
 @implementation WaitingRespFromViewController
 
 EmptyViewController *wrfEmptyView;
+NSMutableArray *wrffirstNameData;
+NSMutableArray *wrflastNameData;
 NSMutableArray *wrfGuestEMailData;
 NSMutableArray *wrfGuestPhoneData;
 NSMutableArray *wrfinvitedFromData;
@@ -53,6 +55,8 @@ NSArray *wrfkeys;
     [self setNeedsStatusBarAppearanceUpdate];
     
     wrfEmptyView = [[EmptyViewController alloc]init];
+    wrffirstNameData = [[NSMutableArray alloc]init];
+    wrflastNameData = [[NSMutableArray alloc]init];
     wrfGuestEMailData = [[NSMutableArray alloc]init];
     wrfGuestPhoneData = [[NSMutableArray alloc]init];
     wrfinvitedFromData = [[NSMutableArray alloc]init];
@@ -90,7 +94,8 @@ NSArray *wrfkeys;
     
     NSDate *loginDate = [self dateToFormatedDate:[dateFormatter stringFromDate:[NSDate date]]];
     
-    
+    __block NSMutableArray *myfirstNameData = [[NSMutableArray alloc] init];
+    __block NSMutableArray *mylastNameData = [[NSMutableArray alloc] init];
     __block NSMutableArray *myGuestEMailData = [[NSMutableArray alloc] init];
     __block NSMutableArray *myGuestPhoneData = [[NSMutableArray alloc] init];
     __block NSMutableArray *myinvitedFromData = [[NSMutableArray alloc] init];
@@ -187,6 +192,32 @@ NSArray *wrfkeys;
                     //NSLog(@"Receiver Phone BULK");
                 }
                 
+                if([arr[i][@"Receiver First Name"] length] == 0) {
+                    [myfirstNameData addObject: @"Not Specified"];
+                    // NSLog(@"Receiver Phone Empty");
+                }
+                
+                else if(!([arr[i][@"Receiver First Name"] isEqualToString:@"BULK"])) {
+                    [myfirstNameData addObject: arr[i][@"Receiver First Name"]];
+                }
+                else {
+                    [myfirstNameData addObject: @"Not Specified"];
+                }
+                
+                
+                if([arr[i][@"Receiver Last Name"] length] == 0) {
+                    [mylastNameData addObject: @"Not Specified"];
+                    // NSLog(@"Receiver Phone Empty");
+                }
+                
+                else if(!([arr[i][@"Receiver Last Name"] isEqualToString:@"BULK"])) {
+                    [mylastNameData addObject: arr[i][@"Receiver Last Name"]];
+                }
+                else {
+                    [mylastNameData addObject: @"Not Specified"];
+                }
+                
+                
                 [myinvitedFromData addObject:arr[i][@"Invite For Date"]];
                 [myinvitedTillData addObject:arr[i][@"Invite Valid Till Date"]];
                 [myactionTakenData addObject:arr[i][@"Invitation Status"]];
@@ -232,6 +263,33 @@ NSArray *wrfkeys;
                 }
                 
                 
+                if([arr[i][@"Receiver First Name"] length] == 0) {
+                    [myfirstNameData addObject: @"Not Specified"];
+                    // NSLog(@"Receiver Phone Empty");
+                }
+                
+                else if(!([arr[i][@"Receiver First Name"] isEqualToString:@"BULK"])) {
+                    [myfirstNameData addObject: arr[i][@"Receiver First Name"]];
+                }
+                else {
+                    [myfirstNameData addObject: @"Not Specified"];
+                }
+                
+                
+                if([arr[i][@"Receiver Last Name"] length] == 0) {
+                    [mylastNameData addObject: @"Not Specified"];
+                    // NSLog(@"Receiver Phone Empty");
+                }
+                
+                else if(!([arr[i][@"Receiver Last Name"] isEqualToString:@"BULK"])) {
+                    [mylastNameData addObject: arr[i][@"Receiver Last Name"]];
+                }
+                else {
+                    [mylastNameData addObject: @"Not Specified"];
+                }
+
+                
+                
                 [myinvitedFromData addObject:arr[i][@"Invite For Date"]];
                 [myinvitedTillData addObject:arr[i][@"Invite Valid Till Date"]];
                 [myactionTakenData addObject:arr[i][@"Invitation Status"]];
@@ -251,6 +309,9 @@ NSArray *wrfkeys;
                 //NSLog(@"Last Iteration");
                 if([myGuestEMailData count]== 0 && [myGuestPhoneData count]== 0 && [myinvitedFromData count]== 0 && [myinvitedTillData count]== 0)
                 {
+                    
+                    [myfirstNameData addObject: @"No Invites"];
+                    [mylastNameData addObject: @"No Invites"];
                     [myGuestEMailData addObject: @"No Invites"];
                     [myGuestPhoneData addObject: @"No Invites"];
                     [myinvitedFromData addObject: @"No Invites"];
@@ -273,6 +334,9 @@ NSArray *wrfkeys;
     
    // NSLog(@"myinvitedFromData count is %lu",(unsigned long)[myinvitedFromData count]);
     for(int i =0;i<[myinvitedFromData count];i++){
+        
+        [wrffirstNameData addObject:[myfirstNameData objectAtIndex:i]];
+        [wrflastNameData addObject:[mylastNameData objectAtIndex:i]];
         [wrfGuestEMailData addObject:[myGuestEMailData objectAtIndex:i]];
         [wrfGuestPhoneData addObject:[myGuestPhoneData objectAtIndex:i]];
         [wrfinvitedFromData addObject:[myinvitedFromData objectAtIndex:i]];
@@ -333,6 +397,19 @@ NSArray *wrfkeys;
     cell.delegate = self;
     
     
+    if(!([[wrffirstNameData objectAtIndex:indexPath.row] isEqualToString:@"Not Specified"])) {
+        cell.firstNameLabel.text = [wrffirstNameData objectAtIndex:indexPath.row];
+    }
+    
+    else {
+        cell.firstNameLabel.text = @"Not Specified";
+    }
+    
+    if(!([[wrflastNameData objectAtIndex:indexPath.row] isEqualToString:@"Not Specified"])) {
+        cell.lastNameLabel.text = [wrflastNameData objectAtIndex:indexPath.row];
+    }
+    
+    
     if(!([[wrfGuestEMailData objectAtIndex:indexPath.row] isEqualToString:@"Not Specified"])) {
         cell.guestEMailLabel.text = [wrfGuestEMailData objectAtIndex:indexPath.row];
     }
@@ -374,7 +451,8 @@ NSArray *wrfkeys;
         
         
         
-        
+        [cell.firstNameLabel setHidden:YES];
+        [cell.lastNameLabel setHidden:YES];
         [cell.guestEMail setHidden:YES];
         [cell.guestEMailLabel setHidden:YES];
         [cell.guestPhone setHidden:YES];
@@ -525,7 +603,8 @@ NSArray *wrfkeys;
                     
                     [[[_ref child:@"invites"] child:[wrfkeyData objectAtIndex:cellIndexPath.row]] removeValue];
                     
-                    
+                    [wrffirstNameData removeObjectAtIndex:cellIndexPath.row];
+                    [wrflastNameData removeObjectAtIndex:cellIndexPath.row];
                     [wrfGuestEMailData removeObjectAtIndex:cellIndexPath.row];
                     [wrfGuestPhoneData removeObjectAtIndex:cellIndexPath.row];
                     [wrfinvitedFromData removeObjectAtIndex:cellIndexPath.row];
@@ -555,7 +634,8 @@ NSArray *wrfkeys;
                     
                     [[[_ref child:@"invites"] child:[wrfkeyData objectAtIndex:cellIndexPath.row]] removeValue];
                     
-                    
+                    [wrffirstNameData removeObjectAtIndex:cellIndexPath.row];
+                    [wrflastNameData removeObjectAtIndex:cellIndexPath.row];
                     [wrfGuestEMailData removeObjectAtIndex:cellIndexPath.row];
                     [wrfGuestPhoneData removeObjectAtIndex:cellIndexPath.row];
                     [wrfinvitedFromData removeObjectAtIndex:cellIndexPath.row];

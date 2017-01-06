@@ -7,7 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "ToDoEntity.h"
 
 @protocol SRHandlesToDoEntity <NSObject>
 
+-(void) receiveToDoEntity:(ToDoEntity *)incomingToDoEntity;
 @end

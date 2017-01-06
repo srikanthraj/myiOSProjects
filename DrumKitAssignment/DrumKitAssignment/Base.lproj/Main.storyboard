@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jaM-Oo-zFE">
+                                <rect key="frame" x="236" y="40" width="129" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="129" id="f7v-yh-qur"/>
+                                    <constraint firstAttribute="height" constant="30" id="u6t-xU-ihm"/>
+                                </constraints>
+                                <state key="normal" title="Play Short Sound 1"/>
+                                <connections>
+                                    <action selector="shortSound1Tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8jW-wc-XPr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nqZ-OX-ZiP">
+                                <rect key="frame" x="232" y="100" width="136" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="136" id="OKX-wg-cio"/>
+                                    <constraint firstAttribute="height" constant="30" id="XxJ-zg-DfW"/>
+                                </constraints>
+                                <state key="normal" title="Play Short Sound 2"/>
+                                <connections>
+                                    <action selector="shortSound2Tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="V9e-Qb-fKZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ouk-GX-ST4">
+                                <rect key="frame" x="234" y="160" width="132" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="blm-mI-jJr"/>
+                                    <constraint firstAttribute="width" constant="132" id="mJM-rp-Yq3"/>
+                                </constraints>
+                                <state key="normal" title="Play Short Sound 3"/>
+                                <connections>
+                                    <action selector="shortSound3Tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kof-n7-vV9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fV3-q2-EQv">
+                                <rect key="frame" x="234" y="220" width="132" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="132" id="XI4-fU-9aC"/>
+                                    <constraint firstAttribute="height" constant="30" id="kGi-pV-Un8"/>
+                                </constraints>
+                                <state key="normal" title="Play Short Sound 4"/>
+                                <connections>
+                                    <action selector="shortSound4Tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bdA-6q-PEQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mxd-BJ-DYR">
+                                <rect key="frame" x="245" y="290" width="110" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="5gp-M3-oTz"/>
+                                    <constraint firstAttribute="width" constant="110" id="q09-TN-Lga"/>
+                                </constraints>
+                                <state key="normal" title="Play Long Song "/>
+                                <connections>
+                                    <action selector="playLongSongTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LUh-6g-gkP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cbu-oS-1Je">
+                                <rect key="frame" x="245" y="350" width="110" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="es2-IX-UIY"/>
+                                    <constraint firstAttribute="width" constant="110" id="hpt-IJ-rfa"/>
+                                </constraints>
+                                <state key="normal" title="Stop Long Song"/>
+                                <connections>
+                                    <action selector="stopLongSongTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JLt-82-Bmj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jaM-Oo-zFE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2qM-x9-U7B"/>
+                            <constraint firstItem="Cbu-oS-1Je" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Cbh-2H-ftx"/>
+                            <constraint firstItem="fV3-q2-EQv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MxY-3p-Ai7"/>
+                            <constraint firstItem="mxd-BJ-DYR" firstAttribute="top" secondItem="fV3-q2-EQv" secondAttribute="bottom" constant="40" id="VGm-qW-I3L"/>
+                            <constraint firstItem="ouk-GX-ST4" firstAttribute="top" secondItem="nqZ-OX-ZiP" secondAttribute="bottom" constant="30" id="Vez-zb-D08"/>
+                            <constraint firstItem="nqZ-OX-ZiP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YeG-My-23E"/>
+                            <constraint firstItem="ouk-GX-ST4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="c7A-nn-o9h"/>
+                            <constraint firstItem="nqZ-OX-ZiP" firstAttribute="top" secondItem="jaM-Oo-zFE" secondAttribute="bottom" constant="30" id="mLd-UM-jY6"/>
+                            <constraint firstItem="mxd-BJ-DYR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nto-fG-xyg"/>
+                            <constraint firstItem="jaM-Oo-zFE" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="oZl-Sh-5a1"/>
+                            <constraint firstItem="fV3-q2-EQv" firstAttribute="top" secondItem="ouk-GX-ST4" secondAttribute="bottom" constant="30" id="p1Y-hL-rnL"/>
+                            <constraint firstItem="Cbu-oS-1Je" firstAttribute="top" secondItem="mxd-BJ-DYR" secondAttribute="bottom" constant="30" id="z8Q-DA-uD2"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="340" y="364"/>
+        </scene>
+    </scenes>
+</document>

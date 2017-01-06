@@ -389,6 +389,7 @@
     if(sender.text.length > 0){
         self.fNameTextView.text = NSLocalizedString(@"😃", nil);
         self.guestNameText.backgroundColor = [UIColor whiteColor];
+        self.guestNameText.textColor = [UIColor blackColor];
         self.entryErrorFName = NO;
        // NSLog(@"Error of First Name is %@",self.entryErrorFName ? @"YES" : @"NO");
     }
@@ -398,6 +399,7 @@
     else {
         UIColor *invalidRed = [UIColor colorWithRed:0.89 green:0.18 blue:0.16 alpha:1];
         self.guestNameText.backgroundColor = [invalidRed colorWithAlphaComponent:0.3];
+        self.guestNameText.textColor = [UIColor whiteColor];
         self.fNameTextView.text = NSLocalizedString(@"😧", nil);
         self.fNameTextView.textColor = invalidRed;
         self.entryErrorFName = YES;
@@ -406,6 +408,7 @@
     if(sender.text.length ==0) {
         
         self.guestNameText.backgroundColor = [UIColor whiteColor];
+        self.guestNameText.textColor = [UIColor blackColor];
         self.fNameTextView.text = NSLocalizedString(@"😢", nil);
         self.entryErrorFName = YES;
     }
@@ -426,6 +429,8 @@
         
         self.emailTextView.text = NSLocalizedString(@"😃", nil);
         self.guestEMailText.backgroundColor = [UIColor whiteColor];
+        
+        self.guestEMailText.textColor = [UIColor blackColor];
         self.entryErrorEMail = NO;
         //NSLog(@"Error of E-Mail is %@",self.entryErrorEMail ? @"YES" : @"NO");
     }
@@ -433,6 +438,7 @@
     else {
         UIColor *invalidRed = [UIColor colorWithRed:0.89 green:0.18 blue:0.16 alpha:1];
         self.guestEMailText.backgroundColor = [invalidRed colorWithAlphaComponent:0.3];
+        self.guestEMailText.textColor = [UIColor whiteColor];
         self.emailTextView.text = NSLocalizedString(@"😧", nil);
         self.emailTextView.textColor = invalidRed;
         self.entryErrorEMail = YES;
@@ -441,6 +447,7 @@
     if(sender.text.length ==0) {
         
         self.guestEMailText.backgroundColor = [UIColor whiteColor];
+        self.guestEMailText.textColor = [UIColor blackColor];
         self.emailTextView.text = NSLocalizedString(@"😢", nil);
         self.entryErrorEMail = YES;
     }
@@ -455,6 +462,7 @@
     if([self validatePhoneWithString:sender.text] && [sender.text length] == 10){
         self.phoneTextView.text = NSLocalizedString(@"😃", nil);
         self.guestPhoneText.backgroundColor = [UIColor whiteColor];
+        self.guestPhoneText.textColor = [UIColor blackColor];
         self.entryErrorPhone = NO;
        // NSLog(@"Error of Phone is %@",self.entryErrorPhone ? @"YES" : @"NO");
         
@@ -463,6 +471,7 @@
     else {
         UIColor *invalidRed = [UIColor colorWithRed:0.89 green:0.18 blue:0.16 alpha:1];
         self.guestPhoneText.backgroundColor = [invalidRed colorWithAlphaComponent:0.3];
+        self.guestPhoneText.textColor = [UIColor whiteColor];
         self.phoneTextView.text = NSLocalizedString(@"😧", nil);
         self.phoneTextView.textColor = invalidRed;
         self.entryErrorPhone = YES;
@@ -470,6 +479,7 @@
     
     if(sender.text.length ==0) {
         self.guestPhoneText.backgroundColor = [UIColor whiteColor];
+        self.guestPhoneText.textColor = [UIColor blackColor];
         self.phoneTextView.text = NSLocalizedString(@"😢", nil);
         self.entryErrorPhone = YES;
     }

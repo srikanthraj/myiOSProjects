@@ -11,6 +11,10 @@
 
 @interface PrevInvSentCell : SWTableViewCell
 
+@property (weak, nonatomic) IBOutlet UILabel *firstNameLabel;
+
+@property (weak, nonatomic) IBOutlet UILabel *lastNameLabel;
+
 @property (nonatomic, weak) IBOutlet UILabel *guestEMail;
 
 

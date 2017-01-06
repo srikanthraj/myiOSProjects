@@ -1,0 +1,541 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0304FC325ECF1918F314289A485D0C13 /* AJWStringValidator.h in Headers */ = {isa = PBXBuildFile; fileRef = C0AC9BC86CD0203F06209035BCE1F80B /* AJWStringValidator.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0973374A3708DBBB13CA3F9FB6E4F200 /* UIView+AJWValidator.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F02F8E7A08FDE19DA52F3493FCFB8FA /* UIView+AJWValidator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0C74E1DB477E1D994737653BAD30CD5E /* AJWStringValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 86253AFC48CF5BB753C4E71A52B4BEEB /* AJWStringValidator.m */; };
+		1CD72CB115D6AC6EEF0EFABAAD15F67A /* AJWValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = E12FE971C62C981D115284E7BA0E672B /* AJWValidator.m */; };
+		2685FFC76BC28A18B255A8DCB24C3815 /* UIView+AJWValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = AE8BB8F3FB9C7EDBB0F46C8DCA09EE95 /* UIView+AJWValidator.m */; };
+		2E7422E1C0B11F2DC67EC7C33D969169 /* AJWValidatorRegularExpressionRule.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FC62303E3142EC1B2933BAFD06F2A45 /* AJWValidatorRegularExpressionRule.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2EEF014CC6B5DA1F3994FE4142A9B6BC /* AJWValidatorRegularExpressionRule.m in Sources */ = {isa = PBXBuildFile; fileRef = 89592348664DA2B7B1FA5604C78D4321 /* AJWValidatorRegularExpressionRule.m */; };
+		337F6AC7EDC448F71460B1EC813F57A4 /* AJWValidator.h in Headers */ = {isa = PBXBuildFile; fileRef = BE4D5261F3AC2D1F2E8E6B51430735F6 /* AJWValidator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3E59F89B9853896EB439D2C9E84B5DF3 /* AJWValidator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EE8871A83C28D31A437DF9F2B274E7E /* AJWValidator-dummy.m */; };
+		51E4F417C4A61170402BCD10668D0F00 /* AJWValidatorRequiredRule.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BFDFDA5320D83038F4A458DB5F63D15 /* AJWValidatorRequiredRule.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		63F62B03A1584EEA8FB80CED4698DF0E /* AJWValidatorRangeRule.m in Sources */ = {isa = PBXBuildFile; fileRef = 2064B578308BBEB45919709142A6016A /* AJWValidatorRangeRule.m */; };
+		68183B4B24EF9C461E18A0CC551373A0 /* AJWValidatorRule.m in Sources */ = {isa = PBXBuildFile; fileRef = 3004A2064ADCB1C71AC0D3BBCBAD4066 /* AJWValidatorRule.m */; };
+		68D1E4BCCA72A5C96E1ACB1BEAAD54CB /* AJWNumericValidator.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E99DEE78ED80B503FCBAB62B1723E35 /* AJWNumericValidator.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7E689036D13D3F00676D631FACC9C7E8 /* AJWValidatorEqualRule.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C04EB1618F710842E5CB7327DCE2CFF /* AJWValidatorEqualRule.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7F5CD29FF29FA6942479F4871DEC74F4 /* AJWValidatorRequiredRule.m in Sources */ = {isa = PBXBuildFile; fileRef = F401C5D1AA921AE12D3EE52308301AAC /* AJWValidatorRequiredRule.m */; };
+		9478754A6DDC3AE8C409A3DE08DFA3A5 /* AJWValidatorRule.h in Headers */ = {isa = PBXBuildFile; fileRef = 999CB797747320CBC1CD269EF1636F88 /* AJWValidatorRule.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9849F773ED88D2BE3826F9141BE63912 /* AJWValidatorRangeRule.h in Headers */ = {isa = PBXBuildFile; fileRef = D03E6A7B811BFC55DE7EB5AA28B463AF /* AJWValidatorRangeRule.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A184DD3BAD74CD6E869DA6F3FE075F4C /* AJWValidatorRemoteRule.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C843D6A951D9F0FAF95840931D52257 /* AJWValidatorRemoteRule.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		BB8A04CCD16100977FDBEBE9BE790E66 /* AJWValidatorCustomRule.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A2A291305CDA00F366F10DB1728781C /* AJWValidatorCustomRule.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C022A489846AE0D153DECAB80F33404B /* Pods-TestTextField-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7185DD7465B033668D465F9E85B7F7DF /* Pods-TestTextField-dummy.m */; };
+		C6AA535169554E684E490F72716651C9 /* AJWValidatorCustomRule.m in Sources */ = {isa = PBXBuildFile; fileRef = 277E7651EB79B17FBB9E25DD38ABC654 /* AJWValidatorCustomRule.m */; };
+		CEE504C14AB94E5FCAD4DD9AABB3B1F2 /* AJWValidatorEqualRule.m in Sources */ = {isa = PBXBuildFile; fileRef = 05E67BDF4F1B1500CCBFC245D8BAB5D1 /* AJWValidatorEqualRule.m */; };
+		E2E12438A8DC9C4FEF0D422AFD422E44 /* AJWValidator+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 88AC00F57D57D28754DF9B5492B4110C /* AJWValidator+Private.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		EC240BBB120F234968DEBAFEFC52F839 /* AJWValidatorRemoteRule.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C6EBAD0BD1AD3950270A4B889E22196 /* AJWValidatorRemoteRule.m */; };
+		F2C13779FB945DF4513FF087BAD8043E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		F9301365E2B535A536B3C6FF94AA967F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		FE1A10F156070BD12DC4B7B06F496C22 /* AJWNumericValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 27C9C985B820D26ED382CE7AADEE5450 /* AJWNumericValidator.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		41D0D597024E779E064EF231893EF6D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 73615AB1195988E96A2149E6ED019E40;
+			remoteInfo = AJWValidator;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		05E67BDF4F1B1500CCBFC245D8BAB5D1 /* AJWValidatorEqualRule.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AJWValidatorEqualRule.m; path = AJWValidator/AJWValidatorEqualRule.m; sourceTree = "<group>"; };
+		0BFDFDA5320D83038F4A458DB5F63D15 /* AJWValidatorRequiredRule.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AJWValidatorRequiredRule.h; path = AJWValidator/AJWValidatorRequiredRule.h; sourceTree = "<group>"; };
+		0C04EB1618F710842E5CB7327DCE2CFF /* AJWValidatorEqualRule.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AJWValidatorEqualRule.h; path = AJWValidator/AJWValidatorEqualRule.h; sourceTree = "<group>"; };
+		1A14DBBFB9808AE18813A0E6015810E1 /* Pods-TestTextField-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TestTextField-acknowledgements.plist"; sourceTree = "<group>"; };
+		1A1799BDAB4EC81C923E14A71077EF2A /* libAJWValidator.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAJWValidator.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C843D6A951D9F0FAF95840931D52257 /* AJWValidatorRemoteRule.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AJWValidatorRemoteRule.h; path = AJWValidator/AJWValidatorRemoteRule.h; sourceTree = "<group>"; };
+		2064B578308BBEB45919709142A6016A /* AJWValidatorRangeRule.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AJWValidatorRangeRule.m; path = AJWValidator/AJWValidatorRangeRule.m; sourceTree = "<group>"; };
+		277E7651EB79B17FBB9E25DD38ABC654 /* AJWValidatorCustomRule.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AJWValidatorCustomRule.m; path = AJWValidator/AJWValidatorCustomRule.m; sourceTree = "<group>"; };
+		27C9C985B820D26ED382CE7AADEE5450 /* AJWNumericValidator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AJWNumericValidator.m; path = AJWValidator/AJWNumericValidator.m; sourceTree = "<group>"; };
+		2C6EBAD0BD1AD3950270A4B889E22196 /* AJWValidatorRemoteRule.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AJWValidatorRemoteRule.m; path = AJWValidator/AJWValidatorRemoteRule.m; sourceTree = "<group>"; };
+		3004A2064ADCB1C71AC0D3BBCBAD4066 /* AJWValidatorRule.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AJWValidatorRule.m; path = AJWValidator/AJWValidatorRule.m; sourceTree = "<group>"; };
+		474B073CE3928DF7E8A527A86CB17FDF /* libPods-TestTextField.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TestTextField.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7185DD7465B033668D465F9E85B7F7DF /* Pods-TestTextField-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TestTextField-dummy.m"; sourceTree = "<group>"; };
+		7A2A291305CDA00F366F10DB1728781C /* AJWValidatorCustomRule.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AJWValidatorCustomRule.h; path = AJWValidator/AJWValidatorCustomRule.h; sourceTree = "<group>"; };
+		7F02F8E7A08FDE19DA52F3493FCFB8FA /* UIView+AJWValidator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+AJWValidator.h"; path = "AJWValidator/UIView+AJWValidator.h"; sourceTree = "<group>"; };
+		86253AFC48CF5BB753C4E71A52B4BEEB /* AJWStringValidator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AJWStringValidator.m; path = AJWValidator/AJWStringValidator.m; sourceTree = "<group>"; };
+		88AC00F57D57D28754DF9B5492B4110C /* AJWValidator+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "AJWValidator+Private.h"; path = "AJWValidator/AJWValidator+Private.h"; sourceTree = "<group>"; };
+		89592348664DA2B7B1FA5604C78D4321 /* AJWValidatorRegularExpressionRule.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AJWValidatorRegularExpressionRule.m; path = AJWValidator/AJWValidatorRegularExpressionRule.m; sourceTree = "<group>"; };
+		8E99DEE78ED80B503FCBAB62B1723E35 /* AJWNumericValidator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AJWNumericValidator.h; path = AJWValidator/AJWNumericValidator.h; sourceTree = "<group>"; };
+		8FC62303E3142EC1B2933BAFD06F2A45 /* AJWValidatorRegularExpressionRule.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AJWValidatorRegularExpressionRule.h; path = AJWValidator/AJWValidatorRegularExpressionRule.h; sourceTree = "<group>"; };
+		91BC316A7D6C14D8B46F7AF93CCB7F5F /* Pods-TestTextField.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TestTextField.release.xcconfig"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		965A6C023F842554D8ED10930AC0F12A /* AJWValidator.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AJWValidator.xcconfig; sourceTree = "<group>"; };
+		999CB797747320CBC1CD269EF1636F88 /* AJWValidatorRule.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AJWValidatorRule.h; path = AJWValidator/AJWValidatorRule.h; sourceTree = "<group>"; };
+		9EE8871A83C28D31A437DF9F2B274E7E /* AJWValidator-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AJWValidator-dummy.m"; sourceTree = "<group>"; };
+		AE8BB8F3FB9C7EDBB0F46C8DCA09EE95 /* UIView+AJWValidator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+AJWValidator.m"; path = "AJWValidator/UIView+AJWValidator.m"; sourceTree = "<group>"; };
+		B254D6257DE068E035384C96FA363B37 /* Pods-TestTextField-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TestTextField-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B710DD22EC53E316022F22D11F60D632 /* Pods-TestTextField-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TestTextField-frameworks.sh"; sourceTree = "<group>"; };
+		BE4D5261F3AC2D1F2E8E6B51430735F6 /* AJWValidator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AJWValidator.h; path = AJWValidator/AJWValidator.h; sourceTree = "<group>"; };
+		C0AC9BC86CD0203F06209035BCE1F80B /* AJWStringValidator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AJWStringValidator.h; path = AJWValidator/AJWStringValidator.h; sourceTree = "<group>"; };
+		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D03E6A7B811BFC55DE7EB5AA28B463AF /* AJWValidatorRangeRule.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AJWValidatorRangeRule.h; path = AJWValidator/AJWValidatorRangeRule.h; sourceTree = "<group>"; };
+		D571DD53CB383976E72E326A900ABC43 /* Pods-TestTextField-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TestTextField-resources.sh"; sourceTree = "<group>"; };
+		E12FE971C62C981D115284E7BA0E672B /* AJWValidator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AJWValidator.m; path = AJWValidator/AJWValidator.m; sourceTree = "<group>"; };
+		E291F05F15565A152671C8CB5A9969A1 /* Pods-TestTextField.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TestTextField.debug.xcconfig"; sourceTree = "<group>"; };
+		F401C5D1AA921AE12D3EE52308301AAC /* AJWValidatorRequiredRule.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AJWValidatorRequiredRule.m; path = AJWValidator/AJWValidatorRequiredRule.m; sourceTree = "<group>"; };
+		FDB4A9F2C70427F00341E8B5590DBB8B /* AJWValidator-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AJWValidator-prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4BD1198C399C29267E80105AB5E13875 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9301365E2B535A536B3C6FF94AA967F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CE789A9C17BA6828E3ED8DA58180555 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2C13779FB945DF4513FF087BAD8043E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1625151E7E948D21B85E2751AA6E18A6 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				965A6C023F842554D8ED10930AC0F12A /* AJWValidator.xcconfig */,
+				9EE8871A83C28D31A437DF9F2B274E7E /* AJWValidator-dummy.m */,
+				FDB4A9F2C70427F00341E8B5590DBB8B /* AJWValidator-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AJWValidator";
+			sourceTree = "<group>";
+		};
+		176F355BD185F78F1FFF9A929ADC5848 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1A1799BDAB4EC81C923E14A71077EF2A /* libAJWValidator.a */,
+				474B073CE3928DF7E8A527A86CB17FDF /* libPods-TestTextField.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7645B33B6B2FBFFB614A2B1C4439AF78 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7A06BD640648640E5AC67AA5759939D9 /* AJWValidator */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7A06BD640648640E5AC67AA5759939D9 /* AJWValidator */ = {
+			isa = PBXGroup;
+			children = (
+				8E99DEE78ED80B503FCBAB62B1723E35 /* AJWNumericValidator.h */,
+				27C9C985B820D26ED382CE7AADEE5450 /* AJWNumericValidator.m */,
+				C0AC9BC86CD0203F06209035BCE1F80B /* AJWStringValidator.h */,
+				86253AFC48CF5BB753C4E71A52B4BEEB /* AJWStringValidator.m */,
+				BE4D5261F3AC2D1F2E8E6B51430735F6 /* AJWValidator.h */,
+				E12FE971C62C981D115284E7BA0E672B /* AJWValidator.m */,
+				88AC00F57D57D28754DF9B5492B4110C /* AJWValidator+Private.h */,
+				7A2A291305CDA00F366F10DB1728781C /* AJWValidatorCustomRule.h */,
+				277E7651EB79B17FBB9E25DD38ABC654 /* AJWValidatorCustomRule.m */,
+				0C04EB1618F710842E5CB7327DCE2CFF /* AJWValidatorEqualRule.h */,
+				05E67BDF4F1B1500CCBFC245D8BAB5D1 /* AJWValidatorEqualRule.m */,
+				D03E6A7B811BFC55DE7EB5AA28B463AF /* AJWValidatorRangeRule.h */,
+				2064B578308BBEB45919709142A6016A /* AJWValidatorRangeRule.m */,
+				8FC62303E3142EC1B2933BAFD06F2A45 /* AJWValidatorRegularExpressionRule.h */,
+				89592348664DA2B7B1FA5604C78D4321 /* AJWValidatorRegularExpressionRule.m */,
+				1C843D6A951D9F0FAF95840931D52257 /* AJWValidatorRemoteRule.h */,
+				2C6EBAD0BD1AD3950270A4B889E22196 /* AJWValidatorRemoteRule.m */,
+				0BFDFDA5320D83038F4A458DB5F63D15 /* AJWValidatorRequiredRule.h */,
+				F401C5D1AA921AE12D3EE52308301AAC /* AJWValidatorRequiredRule.m */,
+				999CB797747320CBC1CD269EF1636F88 /* AJWValidatorRule.h */,
+				3004A2064ADCB1C71AC0D3BBCBAD4066 /* AJWValidatorRule.m */,
+				7F02F8E7A08FDE19DA52F3493FCFB8FA /* UIView+AJWValidator.h */,
+				AE8BB8F3FB9C7EDBB0F46C8DCA09EE95 /* UIView+AJWValidator.m */,
+				1625151E7E948D21B85E2751AA6E18A6 /* Support Files */,
+			);
+			path = AJWValidator;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				7645B33B6B2FBFFB614A2B1C4439AF78 /* Pods */,
+				176F355BD185F78F1FFF9A929ADC5848 /* Products */,
+				CE7702F9FA178BCA2E2354E317F2AEF6 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE7702F9FA178BCA2E2354E317F2AEF6 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E31CEEA61C3543352900676B7C4B4FBD /* Pods-TestTextField */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		E31CEEA61C3543352900676B7C4B4FBD /* Pods-TestTextField */ = {
+			isa = PBXGroup;
+			children = (
+				B254D6257DE068E035384C96FA363B37 /* Pods-TestTextField-acknowledgements.markdown */,
+				1A14DBBFB9808AE18813A0E6015810E1 /* Pods-TestTextField-acknowledgements.plist */,
+				7185DD7465B033668D465F9E85B7F7DF /* Pods-TestTextField-dummy.m */,
+				B710DD22EC53E316022F22D11F60D632 /* Pods-TestTextField-frameworks.sh */,
+				D571DD53CB383976E72E326A900ABC43 /* Pods-TestTextField-resources.sh */,
+				E291F05F15565A152671C8CB5A9969A1 /* Pods-TestTextField.debug.xcconfig */,
+				91BC316A7D6C14D8B46F7AF93CCB7F5F /* Pods-TestTextField.release.xcconfig */,
+			);
+			name = "Pods-TestTextField";
+			path = "Target Support Files/Pods-TestTextField";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		66454A929ACCF49B95ACFDE9CAC27E17 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68D1E4BCCA72A5C96E1ACB1BEAAD54CB /* AJWNumericValidator.h in Headers */,
+				0304FC325ECF1918F314289A485D0C13 /* AJWStringValidator.h in Headers */,
+				E2E12438A8DC9C4FEF0D422AFD422E44 /* AJWValidator+Private.h in Headers */,
+				337F6AC7EDC448F71460B1EC813F57A4 /* AJWValidator.h in Headers */,
+				BB8A04CCD16100977FDBEBE9BE790E66 /* AJWValidatorCustomRule.h in Headers */,
+				7E689036D13D3F00676D631FACC9C7E8 /* AJWValidatorEqualRule.h in Headers */,
+				9849F773ED88D2BE3826F9141BE63912 /* AJWValidatorRangeRule.h in Headers */,
+				2E7422E1C0B11F2DC67EC7C33D969169 /* AJWValidatorRegularExpressionRule.h in Headers */,
+				A184DD3BAD74CD6E869DA6F3FE075F4C /* AJWValidatorRemoteRule.h in Headers */,
+				51E4F417C4A61170402BCD10668D0F00 /* AJWValidatorRequiredRule.h in Headers */,
+				9478754A6DDC3AE8C409A3DE08DFA3A5 /* AJWValidatorRule.h in Headers */,
+				0973374A3708DBBB13CA3F9FB6E4F200 /* UIView+AJWValidator.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		168A7D34D3C1673A0F52B8BC0F79B433 /* Pods-TestTextField */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBEBFEC5955FF972792813D98F7A01D6 /* Build configuration list for PBXNativeTarget "Pods-TestTextField" */;
+			buildPhases = (
+				AB1D8197F9895EDB04C5DC3F88F2940A /* Sources */,
+				4BD1198C399C29267E80105AB5E13875 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C21A15D0EEE2769617C79E9E9509FA66 /* PBXTargetDependency */,
+			);
+			name = "Pods-TestTextField";
+			productName = "Pods-TestTextField";
+			productReference = 474B073CE3928DF7E8A527A86CB17FDF /* libPods-TestTextField.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		73615AB1195988E96A2149E6ED019E40 /* AJWValidator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0ECBC46A785646E4ABD70B7673975DC1 /* Build configuration list for PBXNativeTarget "AJWValidator" */;
+			buildPhases = (
+				0EB1FA9FD57DA2C5FB1E28701C9611E1 /* Sources */,
+				6CE789A9C17BA6828E3ED8DA58180555 /* Frameworks */,
+				66454A929ACCF49B95ACFDE9CAC27E17 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AJWValidator;
+			productName = AJWValidator;
+			productReference = 1A1799BDAB4EC81C923E14A71077EF2A /* libAJWValidator.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 176F355BD185F78F1FFF9A929ADC5848 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				73615AB1195988E96A2149E6ED019E40 /* AJWValidator */,
+				168A7D34D3C1673A0F52B8BC0F79B433 /* Pods-TestTextField */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0EB1FA9FD57DA2C5FB1E28701C9611E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE1A10F156070BD12DC4B7B06F496C22 /* AJWNumericValidator.m in Sources */,
+				0C74E1DB477E1D994737653BAD30CD5E /* AJWStringValidator.m in Sources */,
+				3E59F89B9853896EB439D2C9E84B5DF3 /* AJWValidator-dummy.m in Sources */,
+				1CD72CB115D6AC6EEF0EFABAAD15F67A /* AJWValidator.m in Sources */,
+				C6AA535169554E684E490F72716651C9 /* AJWValidatorCustomRule.m in Sources */,
+				CEE504C14AB94E5FCAD4DD9AABB3B1F2 /* AJWValidatorEqualRule.m in Sources */,
+				63F62B03A1584EEA8FB80CED4698DF0E /* AJWValidatorRangeRule.m in Sources */,
+				2EEF014CC6B5DA1F3994FE4142A9B6BC /* AJWValidatorRegularExpressionRule.m in Sources */,
+				EC240BBB120F234968DEBAFEFC52F839 /* AJWValidatorRemoteRule.m in Sources */,
+				7F5CD29FF29FA6942479F4871DEC74F4 /* AJWValidatorRequiredRule.m in Sources */,
+				68183B4B24EF9C461E18A0CC551373A0 /* AJWValidatorRule.m in Sources */,
+				2685FFC76BC28A18B255A8DCB24C3815 /* UIView+AJWValidator.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB1D8197F9895EDB04C5DC3F88F2940A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C022A489846AE0D153DECAB80F33404B /* Pods-TestTextField-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C21A15D0EEE2769617C79E9E9509FA66 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AJWValidator;
+			target = 73615AB1195988E96A2149E6ED019E40 /* AJWValidator */;
+			targetProxy = 41D0D597024E779E064EF231893EF6D0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3FA451D268613890FA8A5A03801E11D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4DFA0B6F6E0F73052977FFC14A24B83C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91BC316A7D6C14D8B46F7AF93CCB7F5F /* Pods-TestTextField.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		5E62115DE8C09934BF8D2FE5D15FED1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		64FFF950F318FF827F2EA0CAEF9ECC9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 965A6C023F842554D8ED10930AC0F12A /* AJWValidator.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AJWValidator/AJWValidator-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		E017D492776C0020F5621655B200C4C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E291F05F15565A152671C8CB5A9969A1 /* Pods-TestTextField.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		E3D0B115D30EE6CA1A19115E2CF6BDB0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 965A6C023F842554D8ED10930AC0F12A /* AJWValidator.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AJWValidator/AJWValidator-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0ECBC46A785646E4ABD70B7673975DC1 /* Build configuration list for PBXNativeTarget "AJWValidator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3D0B115D30EE6CA1A19115E2CF6BDB0 /* Debug */,
+				64FFF950F318FF827F2EA0CAEF9ECC9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E62115DE8C09934BF8D2FE5D15FED1E /* Debug */,
+				3FA451D268613890FA8A5A03801E11D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBEBFEC5955FF972792813D98F7A01D6 /* Build configuration list for PBXNativeTarget "Pods-TestTextField" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E017D492776C0020F5621655B200C4C8 /* Debug */,
+				4DFA0B6F6E0F73052977FFC14A24B83C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

@@ -1,1 +1,0 @@
-../../../KBContactsSelection/KBContactsSelection/KBContactsSelectionConfiguration.h

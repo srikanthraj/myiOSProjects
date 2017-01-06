@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SRHandlesMOC.h"
 
-@interface MyUINavigationController : UINavigationController
+@interface MyUINavigationController : UINavigationController <SRHandlesMOC>
+
+-(void) receiveMOC:(NSManagedObjectContext *)incomingMOC;
 
 @end
