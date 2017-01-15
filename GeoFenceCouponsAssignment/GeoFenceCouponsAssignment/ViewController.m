@@ -36,9 +36,19 @@
     [self.mapView showAnnotations:self.mapView.annotations animated:YES];
     [self.mapView addAnnotation:self.businessAnno];
     
+    
+    
+  
+    
     // Setup Location Manager
     self.locationManager = [[CLLocationManager alloc]init];
     self.locationManager.delegate = self;
+    
+    
+    self.mapView.showsUserLocation = YES;
+    [self.locationManager startUpdatingLocation];
+    // Start Monitoring Geo region
+    [self.locationManager startMonitoringForRegion:self.geoRegion];
     self.locationManager.allowsBackgroundLocationUpdates = YES;
     self.locationManager.pausesLocationUpdatesAutomatically = YES;
     self.locationManager.desiredAccuracy = kCLLocationAccuracyBest;
@@ -147,6 +157,9 @@
     notif.repeatInterval = 0;
     notif.alertTitle = @"Exclusive Offer!";
     notif.alertBody = @"Shop today at ABC and get Get 30% Off - Coupon Code GHJDUFGF";
+    notif.alertAction = @"OK";
+    notif.soundName = UILocalNotificationDefaultSoundName;
+    notif.applicationIconBadgeNumber = 1;
     [[UIApplication sharedApplication] scheduleLocalNotification:notif];
 }
 

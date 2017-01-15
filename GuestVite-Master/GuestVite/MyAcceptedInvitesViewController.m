@@ -961,8 +961,8 @@ NSString *myAcceptedInviteSelcetedKey;
     
     localNotif.soundName = UILocalNotificationDefaultSoundName;
     
-    localNotif.applicationIconBadgeNumber = 1;
-    
+    //localNotif.applicationIconBadgeNumber = 1;
+    localNotif.userInfo  = [NSDictionary dictionaryWithObject:@"GuestNotification" forKey:@"Guest"];
     
     [[UIApplication sharedApplication] scheduleLocalNotification:localNotif];
     
@@ -1068,6 +1068,7 @@ NSString *myAcceptedInviteSelcetedKey;
     
     else
     {
+        
         
         // DB Updates if distance more than 0.1 mile
         

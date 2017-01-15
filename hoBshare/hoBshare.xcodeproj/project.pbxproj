@@ -1,0 +1,561 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		84F00A751E2713EB00C2ED61 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F00A741E2713EB00C2ED61 /* AppDelegate.swift */; };
+		84F00A771E2713EB00C2ED61 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F00A761E2713EB00C2ED61 /* ViewController.swift */; };
+		84F00A7A1E2713EB00C2ED61 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84F00A781E2713EB00C2ED61 /* Main.storyboard */; };
+		84F00A7C1E2713EB00C2ED61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84F00A7B1E2713EB00C2ED61 /* Assets.xcassets */; };
+		84F00A7F1E2713EB00C2ED61 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84F00A7D1E2713EB00C2ED61 /* LaunchScreen.storyboard */; };
+		84F00A8A1E2713EB00C2ED61 /* hoBshareTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F00A891E2713EB00C2ED61 /* hoBshareTests.swift */; };
+		84F00A951E2713EC00C2ED61 /* hoBshareUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F00A941E2713EC00C2ED61 /* hoBshareUITests.swift */; };
+		84F00AA31E27143100C2ED61 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F00AA21E27143100C2ED61 /* MapKit.framework */; };
+		84F00AA51E27413100C2ED61 /* me@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84F00AA41E27413100C2ED61 /* me@2x.png */; };
+		84F00AA71E27414100C2ED61 /* neighbors@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84F00AA61E27414100C2ED61 /* neighbors@2x.png */; };
+		84F00AAA1E2741D500C2ED61 /* SFLBaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F00AA81E2741D500C2ED61 /* SFLBaseModel.swift */; };
+		84F00AAB1E2741D500C2ED61 /* SFLConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F00AA91E2741D500C2ED61 /* SFLConnection.swift */; };
+		84F00AAD1E27423C00C2ED61 /* HoBShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F00AAC1E27423C00C2ED61 /* HoBShareViewController.swift */; };
+		84F00AAF1E27441800C2ED61 /* MeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F00AAE1E27441800C2ED61 /* MeViewController.swift */; };
+		84F00AB11E27443800C2ED61 /* EditHobbiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F00AB01E27443800C2ED61 /* EditHobbiesViewController.swift */; };
+		84F00AB31E27445200C2ED61 /* NeighboursViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F00AB21E27445200C2ED61 /* NeighboursViewController.swift */; };
+		84F00AB51E285DF100C2ED61 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F00AB41E285DF000C2ED61 /* Models.swift */; };
+		84F00AB71E285E7B00C2ED61 /* DataProviders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F00AB61E285E7B00C2ED61 /* DataProviders.swift */; };
+		84F00AB91E286A1500C2ED61 /* HobbyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F00AB81E286A1500C2ED61 /* HobbyCollectionViewCell.swift */; };
+		84F00ABB1E288E7A00C2ED61 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F00ABA1E288E7A00C2ED61 /* Constants.swift */; };
+		84F00ABF1E2AA00800C2ED61 /* HobbiesCollectionViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F00ABE1E2AA00800C2ED61 /* HobbiesCollectionViewHeader.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		84F00A861E2713EB00C2ED61 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84F00A691E2713EB00C2ED61 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84F00A701E2713EB00C2ED61;
+			remoteInfo = hoBshare;
+		};
+		84F00A911E2713EC00C2ED61 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84F00A691E2713EB00C2ED61 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84F00A701E2713EB00C2ED61;
+			remoteInfo = hoBshare;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		84F00A711E2713EB00C2ED61 /* hoBshare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hoBshare.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84F00A741E2713EB00C2ED61 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		84F00A761E2713EB00C2ED61 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		84F00A791E2713EB00C2ED61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		84F00A7B1E2713EB00C2ED61 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		84F00A7E1E2713EB00C2ED61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		84F00A801E2713EB00C2ED61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84F00A851E2713EB00C2ED61 /* hoBshareTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = hoBshareTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84F00A891E2713EB00C2ED61 /* hoBshareTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hoBshareTests.swift; sourceTree = "<group>"; };
+		84F00A8B1E2713EB00C2ED61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84F00A901E2713EC00C2ED61 /* hoBshareUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = hoBshareUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84F00A941E2713EC00C2ED61 /* hoBshareUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hoBshareUITests.swift; sourceTree = "<group>"; };
+		84F00A961E2713EC00C2ED61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84F00AA21E27143100C2ED61 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		84F00AA41E27413100C2ED61 /* me@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "me@2x.png"; path = "../../../../Downloads/StarterKit/me@2x.png"; sourceTree = "<group>"; };
+		84F00AA61E27414100C2ED61 /* neighbors@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "neighbors@2x.png"; path = "../../../../Downloads/StarterKit/neighbors@2x.png"; sourceTree = "<group>"; };
+		84F00AA81E2741D500C2ED61 /* SFLBaseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SFLBaseModel.swift; path = ../../../../Downloads/StarterKit/SFLBaseModel.swift; sourceTree = "<group>"; };
+		84F00AA91E2741D500C2ED61 /* SFLConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SFLConnection.swift; path = ../../../../Downloads/StarterKit/SFLConnection.swift; sourceTree = "<group>"; };
+		84F00AAC1E27423C00C2ED61 /* HoBShareViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HoBShareViewController.swift; sourceTree = "<group>"; };
+		84F00AAE1E27441800C2ED61 /* MeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeViewController.swift; sourceTree = "<group>"; };
+		84F00AB01E27443800C2ED61 /* EditHobbiesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditHobbiesViewController.swift; sourceTree = "<group>"; };
+		84F00AB21E27445200C2ED61 /* NeighboursViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NeighboursViewController.swift; sourceTree = "<group>"; };
+		84F00AB41E285DF000C2ED61 /* Models.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		84F00AB61E285E7B00C2ED61 /* DataProviders.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataProviders.swift; sourceTree = "<group>"; };
+		84F00AB81E286A1500C2ED61 /* HobbyCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HobbyCollectionViewCell.swift; sourceTree = "<group>"; };
+		84F00ABA1E288E7A00C2ED61 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		84F00ABE1E2AA00800C2ED61 /* HobbiesCollectionViewHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HobbiesCollectionViewHeader.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84F00A6E1E2713EB00C2ED61 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84F00AA31E27143100C2ED61 /* MapKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84F00A821E2713EB00C2ED61 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84F00A8D1E2713EC00C2ED61 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		84F00A681E2713EB00C2ED61 = {
+			isa = PBXGroup;
+			children = (
+				84F00AA21E27143100C2ED61 /* MapKit.framework */,
+				84F00A731E2713EB00C2ED61 /* hoBshare */,
+				84F00A881E2713EB00C2ED61 /* hoBshareTests */,
+				84F00A931E2713EC00C2ED61 /* hoBshareUITests */,
+				84F00A721E2713EB00C2ED61 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		84F00A721E2713EB00C2ED61 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84F00A711E2713EB00C2ED61 /* hoBshare.app */,
+				84F00A851E2713EB00C2ED61 /* hoBshareTests.xctest */,
+				84F00A901E2713EC00C2ED61 /* hoBshareUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84F00A731E2713EB00C2ED61 /* hoBshare */ = {
+			isa = PBXGroup;
+			children = (
+				84F00A741E2713EB00C2ED61 /* AppDelegate.swift */,
+				84F00A761E2713EB00C2ED61 /* ViewController.swift */,
+				84F00A781E2713EB00C2ED61 /* Main.storyboard */,
+				84F00AB81E286A1500C2ED61 /* HobbyCollectionViewCell.swift */,
+				84F00AA81E2741D500C2ED61 /* SFLBaseModel.swift */,
+				84F00AA91E2741D500C2ED61 /* SFLConnection.swift */,
+				84F00AAC1E27423C00C2ED61 /* HoBShareViewController.swift */,
+				84F00ABA1E288E7A00C2ED61 /* Constants.swift */,
+				84F00AB41E285DF000C2ED61 /* Models.swift */,
+				84F00AB61E285E7B00C2ED61 /* DataProviders.swift */,
+				84F00AAE1E27441800C2ED61 /* MeViewController.swift */,
+				84F00AB01E27443800C2ED61 /* EditHobbiesViewController.swift */,
+				84F00AB21E27445200C2ED61 /* NeighboursViewController.swift */,
+				84F00AA61E27414100C2ED61 /* neighbors@2x.png */,
+				84F00AA41E27413100C2ED61 /* me@2x.png */,
+				84F00A7B1E2713EB00C2ED61 /* Assets.xcassets */,
+				84F00A7D1E2713EB00C2ED61 /* LaunchScreen.storyboard */,
+				84F00A801E2713EB00C2ED61 /* Info.plist */,
+				84F00ABE1E2AA00800C2ED61 /* HobbiesCollectionViewHeader.swift */,
+			);
+			path = hoBshare;
+			sourceTree = "<group>";
+		};
+		84F00A881E2713EB00C2ED61 /* hoBshareTests */ = {
+			isa = PBXGroup;
+			children = (
+				84F00A891E2713EB00C2ED61 /* hoBshareTests.swift */,
+				84F00A8B1E2713EB00C2ED61 /* Info.plist */,
+			);
+			path = hoBshareTests;
+			sourceTree = "<group>";
+		};
+		84F00A931E2713EC00C2ED61 /* hoBshareUITests */ = {
+			isa = PBXGroup;
+			children = (
+				84F00A941E2713EC00C2ED61 /* hoBshareUITests.swift */,
+				84F00A961E2713EC00C2ED61 /* Info.plist */,
+			);
+			path = hoBshareUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84F00A701E2713EB00C2ED61 /* hoBshare */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84F00A991E2713EC00C2ED61 /* Build configuration list for PBXNativeTarget "hoBshare" */;
+			buildPhases = (
+				84F00A6D1E2713EB00C2ED61 /* Sources */,
+				84F00A6E1E2713EB00C2ED61 /* Frameworks */,
+				84F00A6F1E2713EB00C2ED61 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = hoBshare;
+			productName = hoBshare;
+			productReference = 84F00A711E2713EB00C2ED61 /* hoBshare.app */;
+			productType = "com.apple.product-type.application";
+		};
+		84F00A841E2713EB00C2ED61 /* hoBshareTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84F00A9C1E2713EC00C2ED61 /* Build configuration list for PBXNativeTarget "hoBshareTests" */;
+			buildPhases = (
+				84F00A811E2713EB00C2ED61 /* Sources */,
+				84F00A821E2713EB00C2ED61 /* Frameworks */,
+				84F00A831E2713EB00C2ED61 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84F00A871E2713EB00C2ED61 /* PBXTargetDependency */,
+			);
+			name = hoBshareTests;
+			productName = hoBshareTests;
+			productReference = 84F00A851E2713EB00C2ED61 /* hoBshareTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		84F00A8F1E2713EC00C2ED61 /* hoBshareUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84F00A9F1E2713EC00C2ED61 /* Build configuration list for PBXNativeTarget "hoBshareUITests" */;
+			buildPhases = (
+				84F00A8C1E2713EC00C2ED61 /* Sources */,
+				84F00A8D1E2713EC00C2ED61 /* Frameworks */,
+				84F00A8E1E2713EC00C2ED61 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84F00A921E2713EC00C2ED61 /* PBXTargetDependency */,
+			);
+			name = hoBshareUITests;
+			productName = hoBshareUITests;
+			productReference = 84F00A901E2713EC00C2ED61 /* hoBshareUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84F00A691E2713EB00C2ED61 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = admin;
+				TargetAttributes = {
+					84F00A701E2713EB00C2ED61 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					84F00A841E2713EB00C2ED61 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 84F00A701E2713EB00C2ED61;
+					};
+					84F00A8F1E2713EC00C2ED61 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 84F00A701E2713EB00C2ED61;
+					};
+				};
+			};
+			buildConfigurationList = 84F00A6C1E2713EB00C2ED61 /* Build configuration list for PBXProject "hoBshare" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 84F00A681E2713EB00C2ED61;
+			productRefGroup = 84F00A721E2713EB00C2ED61 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84F00A701E2713EB00C2ED61 /* hoBshare */,
+				84F00A841E2713EB00C2ED61 /* hoBshareTests */,
+				84F00A8F1E2713EC00C2ED61 /* hoBshareUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84F00A6F1E2713EB00C2ED61 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84F00AA51E27413100C2ED61 /* me@2x.png in Resources */,
+				84F00A7F1E2713EB00C2ED61 /* LaunchScreen.storyboard in Resources */,
+				84F00A7C1E2713EB00C2ED61 /* Assets.xcassets in Resources */,
+				84F00AA71E27414100C2ED61 /* neighbors@2x.png in Resources */,
+				84F00A7A1E2713EB00C2ED61 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84F00A831E2713EB00C2ED61 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84F00A8E1E2713EC00C2ED61 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84F00A6D1E2713EB00C2ED61 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84F00AAF1E27441800C2ED61 /* MeViewController.swift in Sources */,
+				84F00AAA1E2741D500C2ED61 /* SFLBaseModel.swift in Sources */,
+				84F00AB71E285E7B00C2ED61 /* DataProviders.swift in Sources */,
+				84F00A771E2713EB00C2ED61 /* ViewController.swift in Sources */,
+				84F00AB11E27443800C2ED61 /* EditHobbiesViewController.swift in Sources */,
+				84F00A751E2713EB00C2ED61 /* AppDelegate.swift in Sources */,
+				84F00ABF1E2AA00800C2ED61 /* HobbiesCollectionViewHeader.swift in Sources */,
+				84F00AAD1E27423C00C2ED61 /* HoBShareViewController.swift in Sources */,
+				84F00AB51E285DF100C2ED61 /* Models.swift in Sources */,
+				84F00AB31E27445200C2ED61 /* NeighboursViewController.swift in Sources */,
+				84F00AB91E286A1500C2ED61 /* HobbyCollectionViewCell.swift in Sources */,
+				84F00AAB1E2741D500C2ED61 /* SFLConnection.swift in Sources */,
+				84F00ABB1E288E7A00C2ED61 /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84F00A811E2713EB00C2ED61 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84F00A8A1E2713EB00C2ED61 /* hoBshareTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84F00A8C1E2713EC00C2ED61 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84F00A951E2713EC00C2ED61 /* hoBshareUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		84F00A871E2713EB00C2ED61 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84F00A701E2713EB00C2ED61 /* hoBshare */;
+			targetProxy = 84F00A861E2713EB00C2ED61 /* PBXContainerItemProxy */;
+		};
+		84F00A921E2713EC00C2ED61 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84F00A701E2713EB00C2ED61 /* hoBshare */;
+			targetProxy = 84F00A911E2713EC00C2ED61 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		84F00A781E2713EB00C2ED61 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84F00A791E2713EB00C2ED61 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		84F00A7D1E2713EB00C2ED61 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84F00A7E1E2713EB00C2ED61 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		84F00A971E2713EC00C2ED61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		84F00A981E2713EC00C2ED61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84F00A9A1E2713EC00C2ED61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = hoBshare/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.helloworld.TestSwift.hoBshare;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		84F00A9B1E2713EC00C2ED61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = hoBshare/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.helloworld.TestSwift.hoBshare;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		84F00A9D1E2713EC00C2ED61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = hoBshareTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.helloworld.TestSwift.hoBshareTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/hoBshare.app/hoBshare";
+			};
+			name = Debug;
+		};
+		84F00A9E1E2713EC00C2ED61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = hoBshareTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.helloworld.TestSwift.hoBshareTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/hoBshare.app/hoBshare";
+			};
+			name = Release;
+		};
+		84F00AA01E2713EC00C2ED61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = hoBshareUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.helloworld.TestSwift.hoBshareUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = hoBshare;
+			};
+			name = Debug;
+		};
+		84F00AA11E2713EC00C2ED61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = hoBshareUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.helloworld.TestSwift.hoBshareUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = hoBshare;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84F00A6C1E2713EB00C2ED61 /* Build configuration list for PBXProject "hoBshare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84F00A971E2713EC00C2ED61 /* Debug */,
+				84F00A981E2713EC00C2ED61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84F00A991E2713EC00C2ED61 /* Build configuration list for PBXNativeTarget "hoBshare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84F00A9A1E2713EC00C2ED61 /* Debug */,
+				84F00A9B1E2713EC00C2ED61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		84F00A9C1E2713EC00C2ED61 /* Build configuration list for PBXNativeTarget "hoBshareTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84F00A9D1E2713EC00C2ED61 /* Debug */,
+				84F00A9E1E2713EC00C2ED61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		84F00A9F1E2713EC00C2ED61 /* Build configuration list for PBXNativeTarget "hoBshareUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84F00AA01E2713EC00C2ED61 /* Debug */,
+				84F00AA11E2713EC00C2ED61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84F00A691E2713EB00C2ED61 /* Project object */;
+}

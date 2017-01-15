@@ -19,6 +19,9 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nullable, nonatomic, retain) NSString *toDoDetails;
 @property (nullable, nonatomic, retain) NSString *toDoTitle;
 
+@property (nullable, nonatomic, retain) NSString *toDoDoneBy;
+@property (nullable, nonatomic, retain) NSString *toDoLocation;
+
 @end
 
 NS_ASSUME_NONNULL_END

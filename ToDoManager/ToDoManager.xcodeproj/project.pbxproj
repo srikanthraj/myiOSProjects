@@ -15,10 +15,10 @@
 		841097531DC795EE008E37DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 841097511DC795EE008E37DD /* LaunchScreen.storyboard */; };
 		8410975C1DC796EC008E37DD /* MyUINavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8410975B1DC796EC008E37DD /* MyUINavigationController.m */; };
 		8410975F1DC79754008E37DD /* MyUITableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8410975E1DC79754008E37DD /* MyUITableViewController.m */; };
-		841097621DC797C9008E37DD /* MyUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 841097611DC797C9008E37DD /* MyUIViewController.m */; };
 		84E4E8D31DC79ED8008EF854 /* ToDoEntity+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E4E8D01DC79ED8008EF854 /* ToDoEntity+CoreDataProperties.m */; };
 		84E4E8D41DC79ED8008EF854 /* ToDoEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E4E8D21DC79ED8008EF854 /* ToDoEntity.m */; };
 		84E4E8D71DC7A03C008EF854 /* MyUITableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E4E8D61DC7A03C008EF854 /* MyUITableViewCell.m */; };
+		84F00A671E21DF3300C2ED61 /* MyUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 841097611DC797C9008E37DD /* MyUIViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -187,10 +187,10 @@
 				84E4E8D71DC7A03C008EF854 /* MyUITableViewCell.m in Sources */,
 				84E4E8D41DC79ED8008EF854 /* ToDoEntity.m in Sources */,
 				84E4E8D31DC79ED8008EF854 /* ToDoEntity+CoreDataProperties.m in Sources */,
-				841097621DC797C9008E37DD /* MyUIViewController.m in Sources */,
 				8410975F1DC79754008E37DD /* MyUITableViewController.m in Sources */,
 				841097421DC795ED008E37DD /* main.m in Sources */,
 				8410975C1DC796EC008E37DD /* MyUINavigationController.m in Sources */,
+				84F00A671E21DF3300C2ED61 /* MyUIViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

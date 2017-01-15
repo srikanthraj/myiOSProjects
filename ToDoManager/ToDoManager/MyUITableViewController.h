@@ -14,6 +14,6 @@
 @interface MyUITableViewController : UITableViewController <SRHandlesMOC>
 
 -(void) receiveMOC:(NSManagedObjectContext *)incomingMOC;
--(void) receiveToDoEntity:(ToDoEntity *)incomingToDoEntity;
+//-(void) receiveToDoEntity:(ToDoEntity *)incomingToDoEntity;
 
 @end

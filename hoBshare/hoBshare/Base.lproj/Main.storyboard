@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Omb-2t-6uM">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Neighbours-->
+        <scene sceneID="WHt-ek-XMA">
+            <objects>
+                <viewController id="f9b-27-j6M" customClass="NeighboursViewController" customModule="hoBshare" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8uM-E8-maU"/>
+                        <viewControllerLayoutGuide type="bottom" id="s0a-td-K6W"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="SNV-36-eDn">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Gf6-DB-5JV">
+                                <rect key="frame" x="42" y="452" width="522" height="91"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="91" id="Ylm-kp-sgC"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Brk-98-b7T">
+                                    <size key="itemSize" width="419" height="22"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HobbyCollectionViewCell" id="DgU-3t-9Rl" customClass="HobbyCollectionViewCell" customModule="hoBshare">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Video Games" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="Mpk-CM-7tG">
+                                                    <rect key="frame" x="8" y="8" width="84" height="34"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <size key="customSize" width="100" height="50"/>
+                                        <connections>
+                                            <outlet property="hobbyLabel" destination="Mpk-CM-7tG" id="NbB-e6-KTk"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="f9b-27-j6M" id="riq-kw-VGK"/>
+                                    <outlet property="delegate" destination="f9b-27-j6M" id="Sbw-VS-cnR"/>
+                                </connections>
+                            </collectionView>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="N8v-FM-shL">
+                                <rect key="frame" x="28" y="381" width="545" height="5"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="2" id="SeB-xg-0Em"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Hobbies" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ucw-xx-ep9">
+                                <rect key="frame" x="238" y="423" width="92" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="bFD-rE-NBz">
+                                <rect key="frame" x="20" y="20" width="560" height="353"/>
+                                <connections>
+                                    <outlet property="delegate" destination="f9b-27-j6M" id="Qvi-hP-dU5"/>
+                                </connections>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="Gf6-DB-5JV" secondAttribute="trailing" constant="16" id="6pO-ar-KC9"/>
+                            <constraint firstItem="N8v-FM-shL" firstAttribute="leading" secondItem="SNV-36-eDn" secondAttribute="leadingMargin" constant="8" id="7Ju-Xs-wUW"/>
+                            <constraint firstItem="bFD-rE-NBz" firstAttribute="trailing" secondItem="SNV-36-eDn" secondAttribute="trailingMargin" id="8KW-BR-fBK"/>
+                            <constraint firstItem="s0a-td-K6W" firstAttribute="top" secondItem="Gf6-DB-5JV" secondAttribute="bottom" constant="8" symbolic="YES" id="BeF-oU-0Xr"/>
+                            <constraint firstItem="Gf6-DB-5JV" firstAttribute="top" secondItem="ucw-xx-ep9" secondAttribute="bottom" constant="8" symbolic="YES" id="Cru-dj-ebo"/>
+                            <constraint firstItem="bFD-rE-NBz" firstAttribute="leading" secondItem="SNV-36-eDn" secondAttribute="leadingMargin" id="O4Z-Pz-00z"/>
+                            <constraint firstItem="bFD-rE-NBz" firstAttribute="centerX" secondItem="N8v-FM-shL" secondAttribute="centerX" id="Qak-1m-mfS"/>
+                            <constraint firstItem="ucw-xx-ep9" firstAttribute="top" secondItem="N8v-FM-shL" secondAttribute="bottom" constant="37" id="YSg-Gc-Wdt"/>
+                            <constraint firstItem="Gf6-DB-5JV" firstAttribute="leading" secondItem="SNV-36-eDn" secondAttribute="leadingMargin" constant="22" id="mQH-3T-K6e"/>
+                            <constraint firstItem="bFD-rE-NBz" firstAttribute="top" secondItem="8uM-E8-maU" secondAttribute="bottom" id="pww-qm-93R"/>
+                            <constraint firstItem="N8v-FM-shL" firstAttribute="top" secondItem="bFD-rE-NBz" secondAttribute="bottom" constant="8" symbolic="YES" id="vvj-zj-APU"/>
+                            <constraint firstItem="ucw-xx-ep9" firstAttribute="leading" secondItem="SNV-36-eDn" secondAttribute="leading" constant="238" id="zMs-UM-Uep"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Neighbours" image="neighbors.png" id="5lD-Mr-eQb"/>
+                    <connections>
+                        <outlet property="hobbiesCollectionView" destination="Gf6-DB-5JV" id="U7H-wg-RrC"/>
+                        <outlet property="mapView" destination="bFD-rE-NBz" id="kwf-bn-XTb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KDp-Bo-GhD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="819" y="92"/>
+        </scene>
+        <!--Me-->
+        <scene sceneID="CrL-kR-y2m">
+            <objects>
+                <viewController id="nLP-hb-sM6" customClass="MeViewController" customModule="hoBshare" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fOO-oL-ONG"/>
+                        <viewControllerLayoutGuide type="bottom" id="u9Y-0d-FRW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5OQ-de-dag">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LVh-wA-2LO">
+                                <rect key="frame" x="219" y="107" width="79" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Current Position" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hed-gf-ei0">
+                                <rect key="frame" x="215" y="209" width="124" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Current Longitude" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3fP-y1-GXx">
+                                <rect key="frame" x="127" y="308" width="261" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Current Latitude" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Sw-Kj-pze">
+                                <rect key="frame" x="127" y="254" width="261" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="261" id="9tz-5m-e8m"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SHw-gH-VdB">
+                                <rect key="frame" x="146" y="146" width="242" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="242" id="QCe-NU-1iu"/>
+                                    <constraint firstAttribute="height" constant="30" id="YIo-jB-yYd"/>
+                                    <constraint firstAttribute="width" constant="242" id="is8-lR-YhT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dRB-vR-6NQ">
+                                <rect key="frame" x="27" y="349" width="545" height="5"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="2" id="aGk-c2-UL2"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="My Hobbies" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0eu-8m-WJ1">
+                                <rect key="frame" x="237" y="391" width="92" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c1t-pz-8aH">
+                                <rect key="frame" x="260" y="513" width="50" height="30"/>
+                                <state key="normal" title="Edit"/>
+                                <connections>
+                                    <segue destination="NcI-7c-R8W" kind="show" id="kW1-vf-eJY"/>
+                                </connections>
+                            </button>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="TPY-2x-b7Y">
+                                <rect key="frame" x="27" y="420" width="545" height="91"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="91" id="12f-eX-PhR"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Lxm-YO-ukO">
+                                    <size key="itemSize" width="419" height="22"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HobbyCollectionViewCell" id="Zzy-DF-aCz" customClass="HobbyCollectionViewCell" customModule="hoBshare">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Video Games" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="LmA-Mc-njw">
+                                                    <rect key="frame" x="8" y="8" width="84" height="34"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <size key="customSize" width="100" height="50"/>
+                                        <connections>
+                                            <outlet property="hobbyLabel" destination="LmA-Mc-njw" id="Kyo-IL-Ik7"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="nLP-hb-sM6" id="tRL-Gd-HaB"/>
+                                    <outlet property="delegate" destination="nLP-hb-sM6" id="eH9-Ga-H8S"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="4Sw-Kj-pze" firstAttribute="leading" secondItem="5OQ-de-dag" secondAttribute="leading" constant="127" id="2lI-Rs-MZx"/>
+                            <constraint firstItem="c1t-pz-8aH" firstAttribute="centerX" secondItem="5OQ-de-dag" secondAttribute="centerX" id="6aO-qe-5rh"/>
+                            <constraint firstItem="4Sw-Kj-pze" firstAttribute="top" secondItem="hed-gf-ei0" secondAttribute="bottom" constant="24" id="6yQ-po-lL6"/>
+                            <constraint firstItem="dRB-vR-6NQ" firstAttribute="top" secondItem="3fP-y1-GXx" secondAttribute="bottom" constant="20" id="AJx-RW-iT7"/>
+                            <constraint firstItem="hed-gf-ei0" firstAttribute="top" secondItem="SHw-gH-VdB" secondAttribute="bottom" constant="33" id="Iho-sS-PIw"/>
+                            <constraint firstItem="TPY-2x-b7Y" firstAttribute="leading" secondItem="dRB-vR-6NQ" secondAttribute="leading" id="JM5-jV-O3A"/>
+                            <constraint firstItem="0eu-8m-WJ1" firstAttribute="top" secondItem="dRB-vR-6NQ" secondAttribute="bottom" constant="37" id="ORh-VB-edp"/>
+                            <constraint firstItem="dRB-vR-6NQ" firstAttribute="centerX" secondItem="5OQ-de-dag" secondAttribute="centerX" id="UXb-Ip-Y2t"/>
+                            <constraint firstItem="dRB-vR-6NQ" firstAttribute="leading" secondItem="5OQ-de-dag" secondAttribute="leadingMargin" constant="7" id="WeE-4l-Hq4"/>
+                            <constraint firstItem="SHw-gH-VdB" firstAttribute="top" secondItem="LVh-wA-2LO" secondAttribute="bottom" constant="18" id="X9b-tx-R8F"/>
+                            <constraint firstItem="4Sw-Kj-pze" firstAttribute="leading" secondItem="3fP-y1-GXx" secondAttribute="leading" id="XCm-dh-2iP"/>
+                            <constraint firstItem="u9Y-0d-FRW" firstAttribute="top" secondItem="c1t-pz-8aH" secondAttribute="bottom" constant="8" symbolic="YES" id="Xz3-au-8AI"/>
+                            <constraint firstItem="LVh-wA-2LO" firstAttribute="leading" secondItem="5OQ-de-dag" secondAttribute="leading" constant="219" id="ZUA-HK-jHg"/>
+                            <constraint firstItem="0eu-8m-WJ1" firstAttribute="centerX" secondItem="5OQ-de-dag" secondAttribute="centerX" id="afl-Fg-K0B"/>
+                            <constraint firstItem="SHw-gH-VdB" firstAttribute="trailing" secondItem="4Sw-Kj-pze" secondAttribute="trailing" id="hK3-gD-zmC"/>
+                            <constraint firstItem="LVh-wA-2LO" firstAttribute="top" secondItem="fOO-oL-ONG" secondAttribute="bottom" constant="13" id="k2S-Kf-s1x"/>
+                            <constraint firstItem="0eu-8m-WJ1" firstAttribute="leading" secondItem="5OQ-de-dag" secondAttribute="leading" constant="237" id="nHp-r9-J7E"/>
+                            <constraint firstItem="4Sw-Kj-pze" firstAttribute="trailing" secondItem="3fP-y1-GXx" secondAttribute="trailing" id="qR4-T6-xDK"/>
+                            <constraint firstAttribute="bottom" secondItem="TPY-2x-b7Y" secondAttribute="bottom" constant="89" id="rYj-TX-MLM"/>
+                            <constraint firstItem="TPY-2x-b7Y" firstAttribute="top" secondItem="0eu-8m-WJ1" secondAttribute="bottom" constant="8" id="vOR-ZL-lT4"/>
+                            <constraint firstItem="3fP-y1-GXx" firstAttribute="top" secondItem="4Sw-Kj-pze" secondAttribute="bottom" constant="33" id="yAr-Do-V88"/>
+                            <constraint firstItem="TPY-2x-b7Y" firstAttribute="trailing" secondItem="dRB-vR-6NQ" secondAttribute="trailing" id="zym-q7-YjW"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Me" prompt="New Username SignUp Existing Username SignIn" id="DYI-E3-yfL">
+                        <barButtonItem key="rightBarButtonItem" title="Submit" id="hi5-EP-zMn">
+                            <connections>
+                                <action selector="saveButtonPressed:" destination="nLP-hb-sM6" id="rae-dQ-ywo"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="hobbiesCollectionView" destination="TPY-2x-b7Y" id="229-t8-MnJ"/>
+                        <outlet property="latitudeLabel" destination="4Sw-Kj-pze" id="gMI-Ut-Lgz"/>
+                        <outlet property="longitudeLabel" destination="3fP-y1-GXx" id="ezz-az-gng"/>
+                        <outlet property="username" destination="SHw-gH-VdB" id="mIe-kJ-sCa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v8f-XT-Vi9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1627" y="-569"/>
+        </scene>
+        <!--Choose upto 3 hobbies-->
+        <scene sceneID="5Ic-Wb-biu">
+            <objects>
+                <viewController id="NcI-7c-R8W" customClass="EditHobbiesViewController" customModule="hoBshare" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gcn-by-5Z5"/>
+                        <viewControllerLayoutGuide type="bottom" id="q2b-9z-zz4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dDJ-Fg-AmA">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BRc-s3-p5c">
+                                <rect key="frame" x="20" y="385" width="545" height="5"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="2" id="wHv-Vh-5yC"/>
+                                </constraints>
+                            </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="QPt-gY-rmr">
+                                <rect key="frame" x="31" y="452" width="522" height="91"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="91" id="0vk-qh-ZFg"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="e4M-nX-ZdM">
+                                    <size key="itemSize" width="419" height="22"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HobbyCollectionViewCell" id="E9m-RF-2J1" customClass="HobbyCollectionViewCell" customModule="hoBshare">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Video Games" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="SwO-cZ-e03">
+                                                    <rect key="frame" x="8" y="8" width="84" height="34"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <size key="customSize" width="100" height="50"/>
+                                        <connections>
+                                            <outlet property="hobbyLabel" destination="SwO-cZ-e03" id="Hae-V2-wgI"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="NcI-7c-R8W" id="pYR-Lb-VYE"/>
+                                    <outlet property="delegate" destination="NcI-7c-R8W" id="cFr-oL-a5a"/>
+                                </connections>
+                            </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap a Hobby to Delete" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lgL-xy-PZ9">
+                                <rect key="frame" x="153" y="423" width="279" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="279" id="9R3-Q3-aiR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Hobbies" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QVh-92-pC7">
+                                <rect key="frame" x="227" y="398" width="92" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="YWc-sQ-4bV">
+                                <rect key="frame" x="20" y="108" width="560" height="258"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="SuY-g5-oPY">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="50" height="50"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HobbyCollectionViewCell" id="ga1-Cd-7xZ" customClass="HobbyCollectionViewCell" customModule="hoBshare">
+                                        <rect key="frame" x="0.0" y="50" width="100" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Video Games" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="uvZ-L1-8zs">
+                                                    <rect key="frame" x="8" y="8" width="84" height="34"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="uvZ-L1-8zs" firstAttribute="centerY" secondItem="ga1-Cd-7xZ" secondAttribute="centerY" id="qNb-eH-btv"/>
+                                            <constraint firstItem="uvZ-L1-8zs" firstAttribute="centerX" secondItem="ga1-Cd-7xZ" secondAttribute="centerX" id="xuq-y6-gyk"/>
+                                        </constraints>
+                                        <size key="customSize" width="100" height="50"/>
+                                        <connections>
+                                            <outlet property="hobbyLabel" destination="uvZ-L1-8zs" id="71a-96-rhB"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HobbyCategoryHeader" id="j2r-h4-btJ" customClass="HobbiesCollectionViewHeader" customModule="hoBshare">
+                                    <rect key="frame" x="0.0" y="0.0" width="560" height="50"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TECHNOLOGY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MiJ-Qe-Wj3">
+                                            <rect key="frame" x="145" y="14" width="114" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <connections>
+                                        <outlet property="categoryLabel" destination="MiJ-Qe-Wj3" id="gh5-Gz-8Mi"/>
+                                    </connections>
+                                </collectionReusableView>
+                                <connections>
+                                    <outlet property="dataSource" destination="NcI-7c-R8W" id="bdP-Rc-Kal"/>
+                                    <outlet property="delegate" destination="NcI-7c-R8W" id="J6P-5Z-Mn8"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="QVh-92-pC7" firstAttribute="top" secondItem="BRc-s3-p5c" secondAttribute="bottom" constant="8" symbolic="YES" id="1hQ-aK-Bef"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="BRc-s3-p5c" secondAttribute="trailing" constant="15" id="1hT-4L-7SR"/>
+                            <constraint firstItem="YWc-sQ-4bV" firstAttribute="trailing" secondItem="dDJ-Fg-AmA" secondAttribute="trailingMargin" id="3Gr-9z-Jzz"/>
+                            <constraint firstItem="q2b-9z-zz4" firstAttribute="top" secondItem="QPt-gY-rmr" secondAttribute="bottom" constant="8" symbolic="YES" id="3Ys-B7-Vwx"/>
+                            <constraint firstItem="BRc-s3-p5c" firstAttribute="top" secondItem="YWc-sQ-4bV" secondAttribute="bottom" constant="19" id="BHq-9g-euA"/>
+                            <constraint firstItem="lgL-xy-PZ9" firstAttribute="top" secondItem="QVh-92-pC7" secondAttribute="bottom" constant="4" id="GmU-BG-xRe"/>
+                            <constraint firstItem="BRc-s3-p5c" firstAttribute="centerX" secondItem="lgL-xy-PZ9" secondAttribute="centerX" id="QHj-Og-tnY"/>
+                            <constraint firstItem="QVh-92-pC7" firstAttribute="leading" secondItem="dDJ-Fg-AmA" secondAttribute="leading" constant="227" id="ULD-5U-VqN"/>
+                            <constraint firstItem="YWc-sQ-4bV" firstAttribute="top" secondItem="gcn-by-5Z5" secondAttribute="bottom" constant="14" id="WKl-dF-xlr"/>
+                            <constraint firstItem="YWc-sQ-4bV" firstAttribute="leading" secondItem="dDJ-Fg-AmA" secondAttribute="leadingMargin" id="bLW-pJ-Gvq"/>
+                            <constraint firstItem="lgL-xy-PZ9" firstAttribute="centerX" secondItem="QPt-gY-rmr" secondAttribute="centerX" id="fZe-tG-DTo"/>
+                            <constraint firstItem="QPt-gY-rmr" firstAttribute="leading" secondItem="dDJ-Fg-AmA" secondAttribute="leadingMargin" constant="11" id="fk7-dy-uNd"/>
+                            <constraint firstItem="YWc-sQ-4bV" firstAttribute="leading" secondItem="BRc-s3-p5c" secondAttribute="leading" id="mTA-HO-i0f"/>
+                            <constraint firstItem="QPt-gY-rmr" firstAttribute="top" secondItem="lgL-xy-PZ9" secondAttribute="bottom" constant="8" symbolic="YES" id="sup-Df-iBD"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Choose upto 3 hobbies" prompt="Scroll Up and down Tap to add" id="ctO-st-sGa"/>
+                    <connections>
+                        <outlet property="availableHobbiesCollectionView" destination="YWc-sQ-4bV" id="75o-nf-AYX"/>
+                        <outlet property="hobbiesCollectionView" destination="QPt-gY-rmr" id="xPo-Jk-zXN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wxV-bt-nXa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2263" y="-569"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="nus-2T-1Ng">
+            <objects>
+                <tabBarController id="Omb-2t-6uM" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="UZ7-Tw-Toi">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="YEb-6V-rXb" kind="relationship" relationship="viewControllers" id="MQx-EM-0vL"/>
+                        <segue destination="f9b-27-j6M" kind="relationship" relationship="viewControllers" id="hU6-uw-Z1W"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tWy-gq-5fz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1" y="-238"/>
+        </scene>
+        <!--Me-->
+        <scene sceneID="kac-KS-lMB">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="YEb-6V-rXb" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Me" image="me.png" id="l2r-6j-9H8"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="nP3-tu-Xv7">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="nLP-hb-sM6" kind="relationship" relationship="rootViewController" id="sOC-eL-Slh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gnv-GT-ZWF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="819" y="-569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="me.png" width="32" height="32"/>
+        <image name="neighbors.png" width="32" height="32"/>
+    </resources>
+</document>

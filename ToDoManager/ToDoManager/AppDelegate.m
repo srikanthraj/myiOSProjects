@@ -19,10 +19,10 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    
-    
+       
     id<SRHandlesMOC> child = (id<SRHandlesMOC>)self.window.rootViewController;
     [child receiveMOC:self.managedObjectContext];
+    
     return YES;
 }
 

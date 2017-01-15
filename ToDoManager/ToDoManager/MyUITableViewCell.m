@@ -9,8 +9,6 @@
 #import "MyUITableViewCell.h"
 
 
-
-
 @implementation MyUITableViewCell
 
 - (void)awakeFromNib {
@@ -33,6 +31,10 @@
     [dateFormatter setTimeStyle:NSDateFormatterShortStyle];
     
     self.toDoTitleLabel.text = incomingToDoEntity.toDoTitle;
+    
+    self.toDoDoneByLabel.text = incomingToDoEntity.toDoDoneBy;
+    
+    self.toDoLocationLabel.text = incomingToDoEntity.toDoLocation;
     
     self.locaToDoEntity = incomingToDoEntity;
     

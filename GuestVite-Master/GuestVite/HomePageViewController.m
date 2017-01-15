@@ -127,7 +127,7 @@ NSMutableString *fName;
     
     
     
-    UIUserNotificationType types = UIUserNotificationTypeBadge | UIUserNotificationTypeBadge | UIUserNotificationTypeAlert;
+    UIUserNotificationType types =   UIUserNotificationTypeSound | UIUserNotificationTypeAlert;
     
     UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes: types categories:nil];
     

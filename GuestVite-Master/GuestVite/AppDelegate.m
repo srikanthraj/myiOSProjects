@@ -39,7 +39,11 @@
     application.applicationIconBadgeNumber = 0;
     UILocalNotification *localNotif = launchOptions[UIApplicationLaunchOptionsLocalNotificationKey];
     
+
+    
+    
     if(localNotif){
+        
         
         UIAlertController *ac = [UIAlertController alertControllerWithTitle:@"GuestVite" message: localNotif.alertBody preferredStyle:UIAlertControllerStyleAlert];
         

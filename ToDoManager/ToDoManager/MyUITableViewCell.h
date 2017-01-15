@@ -11,10 +11,14 @@
 
 
 @interface MyUITableViewCell : UITableViewCell
-@property (strong, nonatomic) ToDoEntity *locaToDoEntity;
 
+@property (strong, nonatomic) ToDoEntity *locaToDoEntity;
 @property (weak, nonatomic) IBOutlet UILabel *toDoTitleLabel;
 @property (weak, nonatomic) IBOutlet UILabel *toDoDueDateLabel;
+@property (weak, nonatomic) IBOutlet UILabel *toDoDoneByLabel;
+@property (weak, nonatomic) IBOutlet UILabel *toDoLocationLabel;
+
+
 
 -(void) setInternalFields:(ToDoEntity *)incomingToDoEntity;
 

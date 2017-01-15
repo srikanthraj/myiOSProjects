@@ -16,5 +16,7 @@
 @dynamic toDoDueDate;
 @dynamic toDoDetails;
 @dynamic toDoTitle;
+@dynamic toDoDoneBy;
+@dynamic toDoLocation;
 
 @end

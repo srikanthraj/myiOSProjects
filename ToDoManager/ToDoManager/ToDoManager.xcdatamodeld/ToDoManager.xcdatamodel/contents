@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10174" systemVersion="15G31" minimumToolsVersion="Automatic">
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10171" systemVersion="16A323" minimumToolsVersion="Automatic">
     <entity name="ToDoEntity" representedClassName="ToDoEntity" syncable="YES">
         <attribute name="toDoDetails" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="toDoDoneBy" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="toDoDueDate" optional="YES" attributeType="Date" minDateTimeInterval="441781200" syncable="YES"/>
+        <attribute name="toDoLocation" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="toDoTitle" attributeType="String" minValueString="1" syncable="YES"/>
     </entity>
     <elements>
-        <element name="ToDoEntity" positionX="-63" positionY="-18" width="128" height="90"/>
+        <element name="ToDoEntity" positionX="-63" positionY="-18" width="128" height="120"/>
     </elements>
 </model>
